@@ -3906,6 +3906,8 @@ In this step, we:
 
 * Learned that we need a ```main()``` method to run a Java program
 * Discovered that after every code update, we need to compile that source file
+* ```1- first complet the code using javac fileName , then run bytecode using java fileName```
+* ``` once compile can see .class file in same path
 
 ### Step 06: Puzzles About ```Planet```
 
@@ -4109,6 +4111,7 @@ The following list gives you a bird's eye view of things.
 
 The **JVM** runs your program bytecode.
 
+``` understand from bottom to top - jvm+lib ->JRE  , JRE+compiler+debugger =>JDK```
 
 **JRE** = **JVM** + **Libraries** + **Other Components**
 
