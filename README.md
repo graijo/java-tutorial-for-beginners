@@ -4228,6 +4228,18 @@ The process is called **Debugging**, because this mode is heavily used not just 
 * New Project/Class Creation Shortcuts
 * Search for a Class
 
+### Eclipse - IDE - Save Actions
+* Eclipse - preference - search 'save actions'
+* 1-enable save actions by  "performing the selected actions to save" check box
+* 2- then can do a) format code b)organize import c)remove trailing white space d) code style(to enhance code)
+
+### Eclipse - debug mode -
+* Running code step by step
+* step over - execute the line and go to next line
+* Step Over ==> "Ok I have a decent understanding of what's happening, but let's just see what happens next
+Step Into ==> "Hmmm...let's just see what this function is doing things internally
+Step Out ==> "Ahhh I see what this function is doing, "let's get out of this function and just go back where we were"
+
 ### Differences between JShell and IDE
 
 Variables just declared, but used without an initialization, will flag a compilation  error in an IDE! But not so, it seems, in JShell. In regular software, variable initialization at point of declaration (called a "defintion", as we already know) is mandatory. 
