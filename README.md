@@ -5463,6 +5463,11 @@ This did work fine, but it breaks the fundamental principle of encapsulation in 
 *"A method of one object, should not be allowed to directly access the state of another object. To do so, such an object should only be allowed to invoke methods on the target object*".
 
 In other words, a member variable should not be directly accessible from methods declared outside its ```class```.
+[!NOTE]
+A local variable is the variable you declare in a function.
+A member variable is the variable you declare in a class definiton also should be non-static .
+A member variable should not be directly accessible from methods declared outside its ```class```.(here calling member variable from main method ,member variable is decared in MotorBike class-this breaks encapsulation) This memeber variable should be accessed through actions/methods of same class.
+To fix it  add private access modifier
 
 ##### Snippet-3 : MotorBike class with private attributes
 
@@ -19577,3 +19582,7 @@ Copy on Write collections are typically used in Subject – Observer scenarios, 
 The ```CopyOnWriteArrayList.get``` method is NOT ```synchronized```, since on the array that the reads work, there will be no direct write through an ```add()```.
 
 Copy-On-Write collections should only be used for the specific usage scenarios, viz., very large number of data structure traversals (data element reads only), compared to mutations (data element insertions/deletions/modifications). In this way, high concurrency is achieved for traversals.
+
+
+### formatting-on-github
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
