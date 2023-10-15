@@ -6230,6 +6230,10 @@ When we create Ducati and Honda motorbikes, we may want to configure them with s
 
 Suppose our whim is that a Ducati bike starts with 100 mph, and a Honda with 200 mph. 
 
+> *** Note ***
+> not return type needed
+> Constructor used to pass values to instance variable during object creation itself.
+> for eg: place order object creation can take parameters if has a parameterized constructor .
 
 ##### Snippet-1: MotorBike Constructor
 
