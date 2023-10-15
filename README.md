@@ -5644,6 +5644,8 @@ In this step, we:
 ### Step 10: Default Object State
 
 What happens if a data element inside an object is not initialized with a value?
+> this.speed will give 0
+> this.speed=speed ; syso(speed) will show 100 if passed argument is 100
 
 ##### Snippet-5 : Default Initialization of Object State
 
