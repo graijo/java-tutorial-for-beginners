@@ -5532,6 +5532,20 @@ Let's look at ```this.speed = speed;``` in the body of method ```setSpeed()```:
 
 Code written earlier within ```MotorBikeRunner```, such as ```ducati.speed = 100;``` would now result in errors! The correct way to access and modify ```speed``` is to invoke appropriate methods such as  ```setSpeed()```, on ```MotorBike``` objects.
 
+> **Note**
+> Encapsulation in Java refers to integrating data (variables) and code (methods) into a single unit. In encapsulation, a class's variables are hidden from other classes and can only be accessed by the methods of the class in which they are found.
+> Use:- To protect data ,increase privacy , reusability
+> Anything that can be changed and is more likely to change in the future is a candidate for Encapsulation. If you have not started encapsulating classes, you should consider doing so.
+> public -accessible from anywhere. | Private - is only accessible from within the same class | default - is accessible from anywhere within the same package |
+> Protected is accessible on same package and class and its subclasses
+> Modifier    | Class | Package | Subclass | World
+
+public      |  Y    |    Y    |    Y     |   Y
+protected   |  Y    |    Y    |    Y     |   N
+no modifier |  Y    |    Y    |    N     |   N
+private     |  Y    |    N    |    N     |   N
+
+
 #### Classroom Exercise CE-OO-02
 
 1. Update the ```class``` ```Book``` to make sure it no longer breaks Encapsulation principles.
