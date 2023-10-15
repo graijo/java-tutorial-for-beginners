@@ -5142,8 +5142,8 @@ Here's how our program would look like when we think in terms of different actor
     	boardFlight(Plane flight), wishHostess (Hostess hostess), getOffFlight(Plane flight)
 
     AirPlane
-    	altitude, pilot, speed, flightMode
-		takeOff(), cruiseMode(), land()
+    	airline ((Data)), pilot, speed, flightMode ,altitude
+        takeOff()  ((Actions)), cruiseMode(), land()
 
     Hostess
     	welcome()
@@ -5160,6 +5160,9 @@ An object has
 The ```position``` of an ```Airplane``` can change over time. The operations that can be performed on an ```Airplane``` include ```takeOff()```, ```land()``` and ```cruiseMode()```. Each of these actions can change its ```position```. Therefore, an object's behavior can affects its own state.
 
 It's now time to introduce you to some core **OOP** terms, which will make our future discussions easier.
+
+C follows procedural thinking but Java based on Oops and has new thought process.
+Evrything is divided into objects which has data and actions
 
 #### OOP Terminology 
 
