@@ -5538,8 +5538,8 @@ Code written earlier within ```MotorBikeRunner```, such as ```ducati.speed = 100
 > Anything that can be changed and is more likely to change in the future is a candidate for Encapsulation. If you have not started encapsulating classes, you should consider doing so.
 > public -accessible from anywhere. | Private - is only accessible from within the same class | default - is accessible from anywhere within the same package |
 > Protected is accessible on same package and class and its subclasses
-> Modifier    | Class | Package | Subclass | World
 
+Modifier    | Class | Package | Subclass | World
 public      |  Y    |    Y    |    Y     |   Y
 protected   |  Y    |    Y    |    Y     |   N
 no modifier |  Y    |    Y    |    N     |   N
