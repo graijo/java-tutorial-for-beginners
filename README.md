@@ -5644,6 +5644,7 @@ In this step, we:
 ### Step 10: Default Object State
 
 What happens if a data element inside an object is not initialized with a value?
+> ** Note **
 > this.speed will give 0
 > this.speed=speed ; syso(speed) will show 100 if passed argument is 100
 
@@ -6137,7 +6138,7 @@ In this step, we:
 1. Use an encapsulation technique to write methods for the ```Book``` ```class```, that
 	* Increase the number of books
 	* Decrease the number of books
-
+Set validation in setter method for avoiding number of copies becoming less than zero.
 #### Solution
 
 **_BookRunner.java_**
@@ -12891,7 +12892,11 @@ The ```instanceof``` operator returns ```false``` if the object is an instance o
 
 ### Step 14: Introducing Abstract Classes
 
+> ***Note***
+> abstraction -hiding implementation details from enduser.
 An ```abstract class``` can contain ```abstract``` methods.
+> In encapsulation,we hide data .Abstraction hide all complexities in general .User will be using method call without knowing inner working.
+> Its like riding bike,expecting engine to be working ,without knowing working of engine like a mechanic or a scientist.
 
 An abstract method does not have a method definition.
 
