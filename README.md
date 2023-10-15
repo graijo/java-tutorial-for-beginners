@@ -3560,6 +3560,7 @@ In this step, we:
 * Understood the role of the Java compiler in translating source code
 * Realized the need for an Intermediate Representation (IR) such as bytecode
 * Understood how the (Compiler + JVM + OS) combination ensure source code portability
+*  **JVM** is different for different OS ,but bytecode is platform independent
 
 ### Step 02: Creating a Java ```class```
 
@@ -3587,7 +3588,7 @@ Let's create an instance of the class:
 	jshell> Country india = new Country();
 	india ==> Country@6e06451e
 ```
-
+`Country@6e06451e` <= tells where it is stored (2 string representation)
 The syntax is simple - `ClassName objectName = new ClassName()`.
 
 ```india``` is an object of type ```Country```, and is stored in memory at a location indicated by ```6e06451e```.
