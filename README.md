@@ -276,6 +276,7 @@ Here is how our draft steps look like
 
 #### Summary
 
+
 In this step, we:
 
 * Broke down the *PMT-Challenge* problem into sub-problems
