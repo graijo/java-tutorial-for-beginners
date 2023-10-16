@@ -7274,6 +7274,8 @@ In this step, we:
 * We're introduced to the ```boolean``` primitive type
 * Understood where logical operators are used in Java programs
 * Explored the truth-tables of commonly used logical operators
+* > xor will be false if both operands to be same
+  > xor will be true if both operands are not same as each other.
 
 ### Step 09: Short-Circuit Evaluation (With Puzzles)
 
@@ -7297,7 +7299,7 @@ Consider code below. The expression ```j > 15 && i++ > 5``` evaluates to ```fals
 You can also observe that the value of i remains unchanged `10`.  
 
 Why? Because ```i++ > 5``` was not even evaluated.
-Why? `&&` is lazy. It saw that `j > 15` is false. Irrespective of the result of second expression, the result of this `&&` would be false. So, it does NOT evaluate the second expression.
+Why? `&&` is lazy. It saw that `j > 15` is false. Irrespective of the result of second expression, the result of this `&&` would be false. So, it does NOT evaluate the second expression ` i++ > 5`.
 
 ***A more detailed explanation***
 
