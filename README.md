@@ -9311,7 +9311,9 @@ Two new `Animal` objects are created on the `Heap`. Their memory locations (`ref
 In Java, all classes are also called Reference Types. Except for primitive variable instances, all the instances or objects are stored on the Heap. The references to the objects are stored in the reference variables like `jupiter`, `dog` and `cat`.
 
 ` jshell> Animal dog = new Animal(12); `
+
 	` dog ==> Animal@27c20538 `
+ 
  ` here dog is reference variable which will be stored in stack . Animal@27c20538 OR new Animal(12) is the actual object of Animal class for the corresponding reference variable  dog .Object will be stored in heap.`
 
 #### Summary
