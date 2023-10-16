@@ -7326,7 +7326,7 @@ Similarly, the logical **OR** operator also has two versions:
 * The ```||``` operator we saw earlier. This exhibits lazy evaluation.
 * The ```|``` operator, without lazy evaluation.
 
-It is bad programming practice for our code to depend on the compiler's lazy evaluation. It makes code less readable, and can hide difficult-to-fix software bugs. It obviously adds to the code maintenance burden, so don't do it unless you like being in your peers' bad books.        
+It is bad programming practice for our code to depend on the compiler's lazy evaluation. It makes code less readable, and <u>can hide difficult-to-fix software bugs. It obviously adds to the code maintenance burden </u>, so don't do it unless you like being in your peers' bad books.        
 
 #### Summary
 
