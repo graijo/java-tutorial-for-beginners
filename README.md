@@ -9727,6 +9727,7 @@ In the example below, a different value is printed when parentheses are used aro
 	jshell> String.join(",", "2", "3", "4");
 	$8 ==> "2,3,4"
 ```
+1st character (",") is what character to join with , and rest is the list of string to append.
 
 ```replace(String, String)```replaces all occurrences of the first sub-string with the second one. It also works with `char` data type.
 
@@ -9749,6 +9750,7 @@ In this step, we:
 * Noticed a few more ```String``` utility methods, such as ```join()``` and ```replace()```
 
 ### Step 07: Storing mutable text
+operations done on a any string(Sub string) will not change its value,for that we need to save it to another string variable.But operation on string buffer will save it to string buffer variable itself.
 
 ```StringBuffer``` and ```StringBuilder``` allow you to modify a string literal in-place. 
 
@@ -9780,6 +9782,9 @@ In this step, we:
 * Learned about ```StringBuffer``` and ```StringBuilder```
 
 ### Step 08: Introducing Wrapper Classes
+wrapper classes wrap primitive data type and gives an object appearance.
+Integer i1=new Integer(55); OR
+Integer i2=Inter.valueOf("55") OR Integer i3=Integer.valueOf(55)  <= this means we can pass string value as input from appn and then convert to Integer before operation.
 
 Each primitive type in Java has a corresponding built-in **wrapper class**. Wrapper classes are also immutable (As well as ```final```, more on this a little later). 
 
@@ -10045,6 +10050,8 @@ You can also compare dates using the methods shown below:
 ```
 
 These methods are also available with ```LocalTime``` and ```LocalDateTime``` classes as well.
+
+## ****For mutable classes (String , LocalDate ,Integer etc) -All modification method calls return new objects. **** 
 
 ## Arrays and ArrayList
 
