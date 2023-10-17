@@ -10051,7 +10051,7 @@ You can also compare dates using the methods shown below:
 
 These methods are also available with ```LocalTime``` and ```LocalDateTime``` classes as well.
 
-# ****For mutable classes (String , LocalDate ,Integer etc) -All modification method calls will return new objects. **** 
+### ****For mutable classes (String , LocalDate ,Integer etc) -All modification method calls will return new objects. **** 
 
 ## Arrays and ArrayList
 
