@@ -10413,6 +10413,8 @@ Using an enhanced ```for``` loop is easy and intutive.
 
 ```
 
+### Class_Name[] obj= new Class_Name[Array_Length];
+
 ### Step 06: Classroom Exercise  CE-AA-02
 
 #### Exercise
