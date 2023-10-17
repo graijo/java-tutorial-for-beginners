@@ -11165,6 +11165,7 @@ In this section, we revisit the principles of *OOP*, armed with the knowledge of
 The attributes of an object determine what it is made up of. At different points in an object's lifetime, the value of any of its attributes can change. 
 
 At any given time, values of these attributes defines the object's **state**. 
+** object has data and actions . Data has many state and action is behaviour. so we can say object has state and behaviour
 
 In The ```MotorBike``` example, the attribute ```speed``` defines a ```MotorBike```'s state. The ```speed``` of a ```ducati``` defines its state.
 
