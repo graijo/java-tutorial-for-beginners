@@ -10585,7 +10585,7 @@ We created a `sum` method with a variable argument. Let's look at how to use it.
 
 ```
 
-In this step, we took our first look at variable arguments. Variable arguments allow us to pass variable number of arguments to a method.
+In this step, we took our first look at variable arguments. Variable arguments allow us to pass variable number of arguments to a method.We don't have to provide overloaded methods so less code. It is used for simplifying a method that requires a variable number of arguments.
 
 ### Step 09: Variable Argument Methods For ```Student``` 
 
@@ -19634,3 +19634,5 @@ Copy-On-Write collections should only be used for the specific usage scenarios, 
 
 ### formatting-on-github
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+https://www.in28minutes.com/flashcard-java-09-referencetypes
+https://www.in28minutes.com/flashcard-java-10-arraysandarraylist
