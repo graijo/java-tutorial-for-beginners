@@ -5153,9 +5153,9 @@ Do not worry about the implementation details. Focus on the difference in approa
 
 We have **encapsulated** data and methods into these entities, which are now called **objects**. We have defined object boundaries, and what it can (and cannot) do. 
 
-An object has
+An object has (data and actions / functions)
 * **State** : Its data
-* **Behavior** : Its operations
+* **Behavior** : Its operations (State)
 
 The ```position``` of an ```Airplane``` can change over time. The operations that can be performed on an ```Airplane``` include ```takeOff()```, ```land()``` and ```cruiseMode()```. Each of these actions can change its ```position```. Therefore, an object's behavior can affects its own state.
 
