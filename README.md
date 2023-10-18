@@ -11166,8 +11166,8 @@ The attributes of an object determine what it is made up of. At different points
 
 At any given time, values of these attributes defines the object's **state**. 
 
-** object has data and actions . Data has many state and action(function) is behaviour. so we can say object has state and behaviour .
-Data is member variable**
+***object has data and actions . Data has many state and action/behaviour(function) is behaviour. so we can say object has state and behaviour .
+Member variable represent data/state***
 
 In The ```MotorBike``` example, the attribute ```speed``` defines a ```MotorBike```'s state. The ```speed``` of a ```ducati``` defines its state.
 
@@ -11281,6 +11281,7 @@ The above three major areas that correspond to its design could be as follows:
 	* String toString()
 
 Let's try to write a simple ```Fan``` ```class```, that covers all these aspects. 
+***Variable is not exposed to user so short and understandable name can given to variable.Matheod is exposed to user.So name it as per how consumer thinks for the function***
 
 **_Fan.java_**
 
@@ -11813,6 +11814,7 @@ Let's add methods to provide behavior.
 _Customer [Ashwin Tendulkar] lives at [Flat No. 51, Hiranandani Gardens, Mumbai - 400076], works at [null]_
 
 _Customer [Ashwin Tendulkar] lives at [Flat No. 51, Hiranandani Gardens, Mumbai - 400076], works at [Administrative Office, Western Block, Mumbai - 400076]_
+**Composition-Customer will have 2 instance of address class**
 
 ### Step 07: Programming Exercise PE-OOP-02
 
@@ -11913,9 +11915,11 @@ Write a program that manages Books and their Reviews:
 **_Console Output_**
 
 _Book-123, Object Oriented Programming With Java, Ranga, [(Review-10, Great Book", 4), (Review-101, Awesome, 5)]_
+***Good design is always starts from thinking outside in.Putting yourself in the shoes of somebody going to use ur class is the best way to think about designing of class.If a data/member variable is always manadatory during object creation,then it should be on creation(constructor)***
 
 ### Step 07: The Need For Inheritance
-
+**Uses of inheritance-avoid duplication of code -both person and student has same data (name,email and phonenumber) and its methods
+Any user defiend class extend Object class by default if not extended**
 Let's look at two classes `Person` and `Student`.
 
 
