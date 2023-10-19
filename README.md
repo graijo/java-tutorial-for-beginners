@@ -11915,11 +11915,21 @@ Write a program that manages Books and their Reviews:
 **_Console Output_**
 
 _Book-123, Object Oriented Programming With Java, Ranga, [(Review-10, Great Book", 4), (Review-101, Awesome, 5)]_
-***Good design is always starts from thinking outside in.Putting yourself in the shoes of somebody going to use ur class is the best way to think about designing of class.If a data/member variable is always manadatory during object creation,then it should be on creation(constructor)***
+
+**Good design is always starts from thinking outside in.Putting yourself in the shoes of somebody going to use ur class is the best way to think about designing of class.If a data/member variable is always manadatory during object creation,then it should be on creation(constructor)**
 
 ### Step 07: The Need For Inheritance
+
 **Uses of inheritance-avoid duplication of code -both person and student has same data (name,email and phonenumber) and its methods
-Any user defiend class extend Object class by default if not extended**
+Any user defiend class extend Object class by default if not extended
+To call super class method or variable from subclass,use super keyword 
+By default Object class is extends any class
+can not extend 2 class as multiple inheritance(however can have a chain of inheritance) but a class can implement multiple interfaces
+Constructors of super and then sub class will be called when sub class's objecte instantiated.
+Using sub class object,we can call super class methods
+In Java, it is permitted for a super-class reference variable to reference a sub-class object instance.
+the converse assignment is not allowed and throws compilation error**
+
 Let's look at two classes `Person` and `Student`.
 
 
@@ -12997,6 +13007,7 @@ Consider a feast being prepared at a home, and several dishes are on the menu fo
 * Cook the Recipe
 * Cleanup (the Mess created!)
 
+**Using abstract class ,can provide algorithm,then another dev can implement it in extended class**
 These steps would be different for each dish but the order of steps remain the same.
 
 
@@ -13173,6 +13184,7 @@ _Discard unused Vegetables_
 #### Summary
 
 This pattern is called a `Template method` pattern. You define an abstract class with the order of steps defined. You leave the implementation of each of the steps to the sub classes.
+**Abstract class will have high level algorithm**
 
 ### Step 16: Abstract Classes - Puzzles
 
@@ -13469,6 +13481,7 @@ _Go forward_
 ##### Snippet-04 Explained
 
 You can replace `GamingConsole game = new ChessGame()` with `GamingConsole game = new MarioGame()` and now the program runs the `MarioGame`. Isn't it awesome?
+**Interface contains common actions can be performed.Can have multiple implementation for same interface.Then we can easily switch between implementaion without much code modifications.Interface is like contract.Abstract has flexibility of deciding whether or not to implement method.For ex. interface 1 has method 1.Interface 2 has method 2.interface 2 extend interface1.To implement only any one of the method , then use abstract class which have the flexibility to choose to implement or not to implement methods from interfaces.However if any concreate class implementing this abstract class ,then either concrete class or abstract class should have implementation for interfaces**
 
 ### Step 18: Using Interfaces To Design APIs
 
@@ -13718,6 +13731,10 @@ When would you want to use them in your application?
 
 An ```interface``` is primarily used when you have two software components that need to communicate with each other, and there is a need to establish a contract. 
 
+**Interface can have constant(int a=5) declartion not variable(int a)
+Interface can have a default method implemented.
+Interface good :-Your providing interface and 3rd party provides implementation
+Interfaces can have default methods to provide backward compatibility for old interfaces so that they can have new methods without affecting existing code in the implemented classes**
 Recall the following example: `ComplexAlgorithm` defines the interface which helps both the teams involved.
 
 ```java
