@@ -3906,7 +3906,10 @@ In this step, we:
 
 * Learned that we need a ```main()``` method to run a Java program
 * Discovered that after every code update, we need to compile that source file
-* ```1- first complet the code using javac fileName , then run bytecode using java fileName```
+* ```$$$ How to run java pgm via cmd line
+*  1- first complet the code using javac fileName ,
+* class file will be created on same directory
+* 2- then run bytecode using java fileName```
 * ``` once compile can see .class file in same path
 
 ### Step 06: Puzzles About ```Planet```
