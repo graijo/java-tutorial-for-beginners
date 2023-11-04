@@ -5660,12 +5660,14 @@ In this step, we:
 * Explored a few Eclispe tips to generate ```get()``` and ```set()``` versions for each ```class``` attribute  
 
 ### Step 10: Default Object State
-
+$$<
 What happens if a data element inside an object is not initialized with a value?
 > ** Note **
+> 
 > this.speed will give 0
+> 
 > this.speed=speed ; syso(speed) will show 100 if passed argument is 100
-
+$$
 ##### Snippet-5 : Default Initialization of Object State
 
 **_MotorBike.java_**
