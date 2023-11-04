@@ -6162,9 +6162,9 @@ $$<
 1. Use an encapsulation technique to write methods for the ```Book``` ```class```, that
 	* Increase the number of books
 	* Decrease the number of books
-Set validation in setter method for avoiding number of copies becoming less than zero.
+ * Set validation in setter method for avoiding number of copies becoming less than zero.
 
-$$
+ 
 
 #### Solution
 
