@@ -3811,7 +3811,7 @@ A few details:
 * `args` is its formal argument. Here, it's an **array** of ```String```.
 * `public``` - access modifier
 * ```static``` -Java keywords.mainly used for memory management. The static keyword belongs to the class than an instance of the class. The static keyword is used for a constant variable or a method that is the same for every instance of a class.
->$$
+$$
 
 Let's add one such definition within the ```Planet``` code. Open up your text editor and add the ```main``` method as shown below.
 
@@ -3912,7 +3912,7 @@ $$<
 *   .class file will be created on same directory with same name of .java file
 * 2- then run bytecode using java fileName```
 *    java pgm executed 
-
+$$
 ### Step 06: Puzzles About ```Planet```
 
 In this step, let's play with ```Planet``` source code. Get ready for a comedy of errors, by trial-and-error!
@@ -3978,7 +3978,7 @@ Other parts also need to remain the same, such as:
 * The return-type: ```void```
 * Argument type: ```String[]```
 * The presence of keywords ```public``` and ```static```.
->$$
+$$
 ##### Snippet-02: Messing-up ```main()``` - v2
 
 Remove semicolons after statements `Planet earth = new Planet()` and `earth.revolve()`.
