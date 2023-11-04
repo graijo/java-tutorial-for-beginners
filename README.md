@@ -5212,7 +5212,7 @@ Each Planet has its own state:
 Each has its own unique behavior:
 * ```rotate()``` : They rotate at different rates (and in fact, different directions!)
 * ```revolve()``` : They revolve round the sun in different orbits, at different speeds
-
+$$
 #### Summary
 
 In this step, we:
@@ -5384,7 +5384,7 @@ _Effective Java_
 _Clean Code_
 
 ### Step 05: ```MotorBike``` -  Representing State
-
+$$<
 An object encapsulates both *state* and *behavior*. 
 
 *State* defines "the condition of the object at a given time". *State* is represented by **member variables**. 
@@ -5450,7 +5450,7 @@ honda.speed = 80;
 ```
 
 ```ducati``` has its own value for ```speed```, and so does ```honda```. These values are independent of each other. Changing one does not affect the other.
-
+$$
 #### Classroom Exercise CE-OO-01
 
 1. Update the ```Book``` ```class``` created previously to include a member variable named ```noOfCopies```, and demonstrate how it can be set and updated independently for each of the three titles specified earlier.
@@ -5474,7 +5474,7 @@ In the previous step. we were merrily modifying the ```speed``` attribute within
 ```
 
 This did work fine, but it breaks the fundamental principle of encapsulation in **OOP**. 
-
+$$<
 *"A method of one object, should not be allowed to directly access the state of another object. To do so, such an object should only be allowed to invoke methods on the target object*".
 
 In other words, a member variable should not be directly accessible from methods declared outside its ```class```.
@@ -5548,7 +5548,7 @@ Let's look at ```this.speed = speed;``` in the body of method ```setSpeed()```:
 Code written earlier within ```MotorBikeRunner```, such as ```ducati.speed = 100;``` would now result in errors! The correct way to access and modify ```speed``` is to invoke appropriate methods such as  ```setSpeed()```, on ```MotorBike``` objects.
 
 > **Note**
-> Encapsulation in Java refers to integrating data (variables) and code (methods) into a single unit. In encapsulation, a class's variables are hidden from other classes and can only be accessed by the methods of the class in which they are found.
+> Encapsulation in Java refers to integrating data (variables) and code (methods) into a single unit. In encapsulation, a class's variables are hidden from other classes and can only be accessed by the methods of the class in which variables are found.
 > Use:- To protect data ,increase privacy , reusability
 > Anything that can be changed and is more likely to change in the future is a candidate for Encapsulation. If you have not started encapsulating classes, you should consider doing so.
 > public -accessible from anywhere. | Private - is only accessible from within the same class | default - is accessible from anywhere within the same package |
@@ -5564,7 +5564,7 @@ no modifier |  Y    |    Y    |    N     |   N
 
 private     |  Y    |    N    |    N     |   N
 
-
+$$
 
 #### Classroom Exercise CE-OO-02
 
@@ -5646,9 +5646,11 @@ Defining a method such as ```getSpeed()``` allows us to access the current```spe
 		}
 ```
 
+$$
 
 > Eclipse has a very handy feature. When the state elements (member variables) of a class have been defined, it can generate default get() and set() methods for each of them. You would want to use this regularly, to save on time and typing effort. `Right click on class > Generate Source > Generate Getters and Setters`
-
+$$
+> 
 #### Summary
 
 In this step, we:
