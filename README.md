@@ -3531,7 +3531,7 @@ What's happening behind the screens? Let's find out.
 
 ### Step 01: The Java Platform - An Introduction
 
-A computer only understands binary code, which are sequences of ```0```’s and ```1```’s (called **bits**).  All instructions to a computer should be converted to ```0```’s and ```1```’s before execution.
+$$ A computer only understands binary code, which are sequences of ```0```’s and ```1```’s (called **bits**).  All instructions to a computer should be converted to ```0```’s and ```1```’s before execution.
 
 ***When we wrote our code in JShell, how was it converted to binary code?***
 
