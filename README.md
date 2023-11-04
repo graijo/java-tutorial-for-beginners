@@ -6164,7 +6164,7 @@ $$<
 	* Decrease the number of books
  * Set validation in setter method for avoiding number of copies becoming less than zero.
 
- $$
+ SS$$SS
 
 #### Solution
 
