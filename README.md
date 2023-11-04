@@ -5169,7 +5169,7 @@ An object has (data and actions / functions OR actorName and its functions)
 * **State** : Its data
 * **Behavior** : Its operations (State)
 
-$$
+SS$$SS
 
 The ```position``` of an ```Airplane``` can change over time. The operations that can be performed on an ```Airplane``` include ```takeOff()```, ```land()``` and ```cruiseMode()```. Each of these actions can change its ```position```. Therefore, an object's behavior can affects its own state.
 
@@ -5474,6 +5474,7 @@ In the previous step. we were merrily modifying the ```speed``` attribute within
 ```
 
 This did work fine, but it breaks the fundamental principle of encapsulation in **OOP**. 
+
 $$<
 *"A method of one object, should not be allowed to directly access the state of another object. To do so, such an object should only be allowed to invoke methods on the target object*".
 
