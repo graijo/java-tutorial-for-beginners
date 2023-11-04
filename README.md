@@ -5646,11 +5646,11 @@ Defining a method such as ```getSpeed()``` allows us to access the current```spe
 		}
 ```
 
-$$
 
-> Eclipse has a very handy feature. When the state elements (member variables) of a class have been defined, it can generate default get() and set() methods for each of them. You would want to use this regularly, to save on time and typing effort. `Right click on class > Generate Source > Generate Getters and Setters`
-$$
-> 
+
+> $$Eclipse has a very handy feature. When the state elements (member variables) of a class have been defined, it can generate default get() and set() methods for each of them. You would want to use this regularly, to save on time and typing effort. `Right click on class > Generate Source > Generate Getters and Setters`$$>
+
+
 #### Summary
 
 In this step, we:
