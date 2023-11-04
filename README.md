@@ -3798,6 +3798,7 @@ In the previous step, we compiled **_Planet.java_**. In this step, let's run the
 ```
 
 The code may have compiled without any errors, but what's the use if we cannot run the program to see what stuff it's got!
+
 $$<
 **_The ```main()``` method is essential to run code defined within any ```class```._**
 
@@ -3904,6 +3905,7 @@ Bingo! We finally got what we wanted to see!
 #### Summary
  
 In this step, we:
+
 $$<
 * Learned that we need a ```main()``` method to run a Java program
 * Discovered that after every code update, we need to compile that source file
@@ -4106,6 +4108,7 @@ In this step, we:
 * Concluded that developing Java code in code-editors is an empowering feeling!
 
 ### Step 07: The JVM, JRE And JDK
+$$<
 
 What are *JVM*, *JRE* and the *JDK*? 
 
@@ -4134,6 +4137,7 @@ An interesting way to remember this organization is:
 * **JRE** is needed to **Run** Java Programs
 
 * **JVM** is needed to **Run Bytecode** generated from Java programs
+ 
 
 Let's check a couple of scenarios to test your understanding.
 
@@ -4156,7 +4160,7 @@ In summary
 In this step, we:
 * Understood the differences in the scope-of-work done by the JVM, JRE and JDK
 * Realized how each of them could be invoked by different terminal commands, such as *javac* and *java*.
-
+$$
 ## Eclipse
 
 TODO - Need Revision 
@@ -4240,8 +4244,10 @@ The process is called **Debugging**, because this mode is heavily used not just 
 ### Eclipse - debug mode -
 * Running code step by step
 * step over - execute the line and go to next line
-* Step Over ==> "Ok I have a decent understanding of what's happening, but let's just see what happens next
-Step Into ==> "Hmmm...let's just see what this function is doing things internally
+* Step Over ==> "Ok I have a decent understanding of what's happening, but let's just see what happens next.
+
+Step Into ==> "Hmmm...let's just see what this function is doing things internally.
+
 Step Out ==> "Ahhh I see what this function is doing, "let's get out of this function and just go back where we were"
 
 ### Differences between JShell and IDE
