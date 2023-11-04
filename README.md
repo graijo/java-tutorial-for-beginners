@@ -6322,11 +6322,12 @@ _Earlier Honda Speed is : 200_
 We defined a single-argument constructor for ```MotorBike```, whosw definition looks like this:
 
 ```public MotorBike(int speed){ /* Constructor Code Goes Here  */ }```
-
+$$<
 The constructor is a method, whose name is the same as the ```class``` name. All Java rules for a method apply to constructors as well. Constructor cannot be directly called. 
 
 A constructor is always invoked when a ```class``` object is created, using the ```new``` keyword. A constructor for a ```class``` could accept zero, one or more than one arguments. Let's next write some full-blooded code for a ```MotorBike``` constructor.
 
+SS$$SS
 
 #### Summary
 
@@ -6569,7 +6570,7 @@ We have called the constructor ```MotorBike(int)```, qualified with the ```this`
 Earlier, we looked at basic Java types (including ```int```, ```double``` and ```boolean```), and got a little familiar with them.
 
 We used literal values, declared variables and formed expressions using them. 
-
+$$
 Java **primitive types** include:
 * Integer Types
 	* ```byte```
@@ -6583,7 +6584,7 @@ Java **primitive types** include:
 	* ```char```
 * Logical Type
 	* ```boolean```
-
+SS$$SS
 In this section, let's play with each of these types to understand them further.
 
 ### Step 01: The Integer Types
@@ -6593,12 +6594,13 @@ Integers are not much of a mystery, are they? They've been part of us since our 
 Java supports them with ease, and we have coded quite a few examples using them, already. 
 
 Java also has a **wrapper class** corresponding to each of them, which make their primitive versions more versatile. The wrapper classes we are talking about are:
-
+$$
+wrapper classes are used to wrap primitive data types such as int, char, etc. into objects
 * ```Byte```: for ```byte```
 * ```Short```: matching ```short```
 * ```Integer``` corresponding to ```int```
 * ```Long```: about ```long```
-
+SS$$SS
 Let's see how we can work with them.
 
 ##### Snippet-01 : Integer Sizes
@@ -7003,7 +7005,7 @@ In this step, we:
 * Understood the differences between ```double``` and ```float```
 
 ### Step 06: Introducing BigDecimal
-
+$$
 Compact though they are, ```double``` and ```float``` are not very precise representations of floating-point numbers. 
 
 In fact, they are not used in computations that require high degrees for accuracy, such as scientific experiments and financial applications. The next example shows you why.
