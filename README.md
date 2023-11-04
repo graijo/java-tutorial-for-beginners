@@ -5696,9 +5696,9 @@ $$
 **_Current Honda Speed is : 0_**
 
 ##### Snippet-6 Explained
-
+$$<
 When we instantiate an object, all its state elements are always initialized, to the default values of their types. Inside ```MotorBike```, ```speed``` is declared to be an ```int```, and so is initialized to ```0```. This happens even before any method of ```MotorBike``` is called, including ```start()```.
-
+$$
 You can see that `honda.getSpeed()` printed `0` even though we did not explictly initialize it.
 
 Default 
@@ -5806,8 +5806,8 @@ _Bike started!_
 ##### Snippet-8 Explained
 
 ```setSpeed()``` checks `if(speed > 0)` and does not update speed for negative values. 
-
-> This is not perfect solution because the caller of the `setSpeed` method assumes that he was successful. Ideally, we should throw an Exception indicating validation error. We will talk about Exceptions later.
+$$<
+> This is not perfect solution because the caller of the `setSpeed` method assumes that he was successful with -ve speed value. Ideally, we should throw an Exception indicating validation error. We will talk about Exceptions later.
 
 #### Summary
 
@@ -5815,6 +5815,8 @@ In this step, we:
 
 * Explored the first advantage of encapsulation - A provision for adding data validation
 * Highlighted how such validation can be done, using the ```Motorbike``` example
+
+$$
 
 ### Step 11: Encapsulation - Advantages (Code Reuse)
 
@@ -6155,10 +6157,15 @@ In this step, we:
 
 #### Exercises
 
+$$<
+
 1. Use an encapsulation technique to write methods for the ```Book``` ```class```, that
 	* Increase the number of books
 	* Decrease the number of books
 Set validation in setter method for avoiding number of copies becoming less than zero.
+
+$$
+
 #### Solution
 
 **_BookRunner.java_**
