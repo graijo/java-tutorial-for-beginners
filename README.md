@@ -3531,7 +3531,7 @@ What's happening behind the screens? Let's find out.
 
 ### Step 01: The Java Platform - An Introduction
 
-$$ A computer only understands binary code, which are sequences of ```0```’s and ```1```’s (called **bits**).  All instructions to a computer should be converted to ```0```’s and ```1```’s before execution.
+$$< A computer only understands binary code, which are sequences of ```0```’s and ```1```’s (called **bits**).  All instructions to a computer should be converted to ```0```’s and ```1```’s before execution.
 
 ***When we wrote our code in JShell, how was it converted to binary code?***
 
@@ -3560,7 +3560,7 @@ In this step, we:
 * Understood the role of the Java compiler in translating source code
 * Realized the need for an Intermediate Representation (IR) such as bytecode
 * Understood how the (Compiler + JVM + OS) combination ensure source code portability
-*  **JVM** is different for different OS ,but bytecode is platform independent
+*  **JVM** is different for different OS ,but bytecode is platform independent>$$
 
 ### Step 02: Creating a Java ```class```
 
@@ -3798,7 +3798,7 @@ In the previous step, we compiled **_Planet.java_**. In this step, let's run the
 ```
 
 The code may have compiled without any errors, but what's the use if we cannot run the program to see what stuff it's got!
-
+$$<
 **_The ```main()``` method is essential to run code defined within any ```class```._**
 
 The definition of ```main()``` needs to have this exact synatx:
@@ -3809,8 +3809,9 @@ A few details:
 * `void` is its return type
 * `main` is its name
 * `args` is its formal argument. Here, it's an **array** of ```String```.
-* `public``` and ```static``` are reserved Java keywords. More on these later sections.
-
+* `public``` - access modifier
+* ```static``` -Java keywords.mainly used for memory management. The static keyword belongs to the class than an instance of the class. The static keyword is used for a constant variable or a method that is the same for every instance of a class.
+>$$
 
 Let's add one such definition within the ```Planet``` code. Open up your text editor and add the ```main``` method as shown below.
 
@@ -3901,16 +3902,16 @@ Let's fix it. We need to edit **_Planet.java_** once again!
 Bingo! We finally got what we wanted to see!
 
 #### Summary
-
+ 
 In this step, we:
-
+$$<
 * Learned that we need a ```main()``` method to run a Java program
 * Discovered that after every code update, we need to compile that source file
-* ```$$$ How to run java pgm via cmd line
-*  1- first complet the code using javac fileName ,
-* class file will be created on same directory
+*    How to run java pgm via cmd line
+*  1- first compile the code using javac fileName ,
+*   .class file will be created on same directory with same name of .java file
 * 2- then run bytecode using java fileName```
-* ``` once compile can see .class file in same path
+*    java pgm executed 
 
 ### Step 06: Puzzles About ```Planet```
 
@@ -3970,14 +3971,14 @@ Change method name from `main` to `main1`
 	command-prompt>
 
 ```
-
+$$<
 Don't mess with the method-name of ```main()```.
 
 Other parts also need to remain the same, such as:
 * The return-type: ```void```
 * Argument type: ```String[]```
 * The presence of keywords ```public``` and ```static```.
-
+>$$
 ##### Snippet-02: Messing-up ```main()``` - v2
 
 Remove semicolons after statements `Planet earth = new Planet()` and `earth.revolve()`.
