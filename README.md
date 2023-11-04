@@ -4235,7 +4235,7 @@ The process is called **Debugging**, because this mode is heavily used not just 
 * Code Text Editor Shortcuts
 * New Project/Class Creation Shortcuts
 * Search for a Class
-
+$$<
 ### Eclipse - IDE - Save Actions
 * Eclipse - preference - search 'save actions'
 * 1-enable save actions by  "performing the selected actions to save" check box
@@ -4245,11 +4245,9 @@ The process is called **Debugging**, because this mode is heavily used not just 
 * Running code step by step
 * step over - execute the line and go to next line
 * Step Over ==> "Ok I have a decent understanding of what's happening, but let's just see what happens next.
-
-Step Into ==> "Hmmm...let's just see what this function is doing things internally.
-
-Step Out ==> "Ahhh I see what this function is doing, "let's get out of this function and just go back where we were"
-
+* Step Into ==> "Hmmm...let's just see what this function is doing things internally.
+* Step Out ==> "Ahhh I see what this function is doing, "let's get out of this function and just go back where we were"
+$$
 ### Differences between JShell and IDE
 
 Variables just declared, but used without an initialization, will flag a compilation  error in an IDE! But not so, it seems, in JShell. In regular software, variable initialization at point of declaration (called a "defintion", as we already know) is mandatory. 
@@ -4291,6 +4289,10 @@ That is because Java source code is governed by strict **Scope Rules**.
 
 
 Let's have another look at where we have reached with our solution, to the *PMT-Challenge* problem. Only now, let's change the code arrangement.
+$$check how format specifiers used in syso in snippert-01 
+(more info on https://stackoverflow.com/questions/43359850/how-can-i-print-this-2-variables-in-the-same-println-system-out-println
+https://stackoverflow.com/questions/41532840/log4j2-using-against-using-d-or-s 
+https://www.slf4j.org/faq.html#logging_performance)
 
 ##### Snippet-01: Revisited - The *PMT-Challenge*
 
@@ -4627,7 +4629,7 @@ There is something huge we observe in the previous example. All overloaded versi
 * The point to note is, that **a more specialized function can be implemented-in-terms-of a more general function**. 
 
 Let's now reorganize this part of the code.
-
+$$
 ##### Snippet-4: Code Reuse
 
 **_MultiplicationTable.java_**
@@ -4798,7 +4800,7 @@ _6 * 20 = 120_
 
 ##### Snippet-5 Explained
 
-* This example merely extended what we did in the previous example. We will will take this extension one level further now! Yes, you guessed right. We will implement ```print()``` in terms of ```print(int,int,int)```.
+* This example merely extended what we did in the previous example. We will take this extension one level further now! Yes, you guessed right. We will implement ```print()``` in terms of ```print(int,int,int)```.
 
 ##### Snippet-6 : Extending code reuse (contd.)
 
@@ -5106,7 +5108,7 @@ Recommended Videos:
 - Object Oriented Progamming - Part 2 - https://www.youtube.com/watch?v=i6EztA-F8UI
 
 ### Step 01: Object Oriented Progamming (OOP) - Basic Terminology
-
+$$<
 Let's consider a few examples before we get to Object Oriented Progamming.
 
 Humans think in a step by step process.
@@ -5163,9 +5165,11 @@ Do not worry about the implementation details. Focus on the difference in approa
 
 We have **encapsulated** data and methods into these entities, which are now called **objects**. We have defined object boundaries, and what it can (and cannot) do. 
 
-An object has (data and actions / functions)
+An object has (data and actions / functions OR actorName and its functions)
 * **State** : Its data
 * **Behavior** : Its operations (State)
+
+$$
 
 The ```position``` of an ```Airplane``` can change over time. The operations that can be performed on an ```Airplane``` include ```takeOff()```, ```land()``` and ```cruiseMode()```. Each of these actions can change its ```position```. Therefore, an object's behavior can affects its own state.
 
@@ -5193,6 +5197,7 @@ Let's visit and enhance  the ```Planet``` example we had written a few sections 
 
 Let's look at some **OOP** terminology.
 
+$$
 A **class** is a template. An **object** is an instance of a class. In above example, `Planet` is a class. `earth` and `venus` are objects.
 * ```name```, ```location``` and ```distanceFromSun``` compose object state.
 * ```rotate()``` and ```revolve()``` define object's behavior.
