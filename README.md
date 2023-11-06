@@ -7057,12 +7057,14 @@ In this step, we:
 * Understood that ```BigDecimal``` is immutable
 * Saw that accuracy is best achieved when you construct ```BigDecimal``` data using string literals 
 
+$$
+
 ### Step 06: BigDecimal Operations
 
 Let's look at a few other operations defined in the ```BigDecimal``` class.
 
 ##### Snippet-01: Arithmetic Operations
-
+$$<
 All BigDecimal operations support only BigDecimal operands.
 
 ```java
@@ -7106,6 +7108,8 @@ In this step, we:
 
 * Explored the ```BigDecimal``` methods for doing some basic arithmetic
 * Found that ```BigDecimal``` has constructors accepting most basic Java numeric types
+
+SS$$SS
 
 ### Step 07: Classroom Exercise CE-02
 
@@ -7189,7 +7193,7 @@ In this step, we:
 * Learnt how to make use of built-in Java packages, through the ```import``` statement 
 
 ### Step 08: ```boolean```, Relational and Logical Operators
-
+$$<
 The Java ```boolean	``` data type is one that holds only one of two values: ```true``` or ```false```. Both labels are case-sensitive. We have seen examples of built-in comparison operators, such as ```==```, ```!=``` and ```>```, that evaluate expressions to  give us ```boolean``` results. Let us do a quick recap of some of these.
 
 ##### Snippet-01 : Relational Operators : Recap
@@ -7249,6 +7253,7 @@ We would want to find if `i` is between `15` and `25`.  An expression `i >= 15 &
 	jshell> i >= 15 && i <= 25
 	$5 ==> false
 ```
+SS$$SS
 
 An expression with```&&``` evaluates to ```true``` only if **both** its ```boolean``` operands evaluate to ```true```.
 
@@ -7310,7 +7315,7 @@ In this step, we:
   > xor will be true if both operands are not same as each other.
 
 ### Step 09: Short-Circuit Evaluation (With Puzzles)
-
+$$<
 Consider code below. The expression ```j > 15 && i++ > 5``` evaluates to ```false``` as expected. `j>15` is `false` as `j` has a value of `15`. 
 
 
@@ -7360,6 +7365,8 @@ Similarly, the logical **OR** operator also has two versions:
 
 It is bad programming practice for our code to depend on the compiler's lazy evaluation. It makes code less readable, and <u>can hide difficult-to-fix software bugs. It obviously adds to the code maintenance burden </u>, so don't do it unless you like being in your peers' bad books.        
 
+SS$$SS
+
 #### Summary
 
 In this step, we:
@@ -7370,7 +7377,7 @@ In this step, we:
 * Learned that code depending on lazy-evaluation, is less readable 
 
 ### Step 10: Character Types
- 
+ $$<
 Earlier, we explored how we could store basic keyboard characters(called **ascii-code** characters), such as:
 * Upper-Case and lower-case letters (A-Z, a-z)
 * Numeric characters (0-9)
@@ -7757,6 +7764,8 @@ Y
 
 Z
 
+SS$$SS
+
 ### Step 15: The Primitive Types - A Review
 
 In this section, we built on our knowledge of the primitive Java types. 
@@ -8110,9 +8119,9 @@ Let's now try to get a match with the ```else``` clause, the only one unexplored
 ##### Snippet-03 Explained
 
 When ```i``` is given a value of ```26```, the first two conditions are false. Hence, the code in the `else` gets executed. 
-
+$$<
 _**one, and only one** clause among those present in an  ```if```-```else if```-```else``` statement ever evaluates to ```true```. Also, the code block corresponding to the matched clause will get executed. This is ensured even if conditions are *duplicated*, or *overlap*. In that scenario, only the first such condition, downward from the ```if``` in sequence, will evaluate to ```true```. The remaining possible matches are not even checked._
-
+SS$$SS
 #### Summary
 
 In this step, we:
@@ -8245,7 +8254,7 @@ if(m > 20) {
 ```
 
 **Answer:**
-
+$$
 _**Compiler Error**_
 
 #### Programming Puzzle PP-05
@@ -8273,6 +8282,8 @@ _**Compiler Error**_
 **_6_**
 
 > In the absence of explicit blocks, Only the statement next to the if statement is considered to be part of the if statement block.
+
+SS$$SS
 
 ### Step 04: Reading User Input
 - - - 
@@ -8531,6 +8542,8 @@ In this step, we:
 * Combined our knowledge of conditionals, with our recent learning on taking multiple console inputs
 * Ultimately solved the *Menu-Challenge* problem
 
+$$<
+
 ### Step 07: Introducing ```switch```
 
 If you remember, our initial list of conditionals to manage control-flow, also had a ```switch``` statement. A ```switch``` also tests multiple conditions, and just like an ```else``` clause, it can handle the default possibility. Conceptually, a ```switch``` statement looks like the following:
@@ -8728,9 +8741,14 @@ In this step, we:
 * Saw how it could implement the same control-flow as the ```if``` family of conditionals
 * Learned the importance of coding it correctly, to enjoy Java control-flow guarantees
 
+SS$$SS
+$$<
+
 ### Puzzles On ```switch```
 
 Let's now have some fun with the various conditionals. These puzzles will not only ensure you're still wide awake, they will also give you ample food for thought. 
+
+SS$$SS
 
 ##### Programming Puzzle PP-01
 
@@ -8911,6 +8929,8 @@ _default_
 
 **_Compiler Error_**
 
+SS$$
+
 ### Step 09: Comparing The ```if``` Family, And ```switch```
 
 Let's compare and contrast these two approaches, to gain some experience on how to choose a conditional.
@@ -9051,6 +9071,8 @@ _choice : 1_
 
 _result : 7_
 
+$$<
+
 #### Summary
 
 In this step, we:
@@ -9058,6 +9080,8 @@ In this step, we:
 * Observed that the same conditional code could be written using an ```if```-family conditional, or the ```switch```.
 * Learned that an ```if``` family conditional is difficult to get wrong, as the rules for it are very strict. It can be used to evaluate only ```boolean``` conditions. But it is verbose, and often less readable.
 * Came to know that a ```switch``` conditional can be used to check for only integer values. It is very compact, and very readable. However, the relative order of ```case``` clauses and ```default``` are not fixed, and the usage of ```break``` is optional. This can lead to subtle errors in your program. 
+
+SS$$SS
 
 ### Step 10: Programming Exercise PE-03
 
@@ -9135,7 +9159,7 @@ In this step, we:
 	}
 
 ```
-
+$$<
 ### Step 12: Introducing ```?:```, The Ternary Operator
 - - - 
 
@@ -9161,6 +9185,7 @@ Conceptually, its syntax is this:
 	jshell> isEven = ( i%2==0 ? true : false);
 	isEven ==> false
 ```
+SS$$SS
 
 You can return non boolean values.
 ```java
@@ -9190,7 +9215,7 @@ Both the expressions should return value of same type.
 	jshell>
 
 ```
-
+SS$$SS
 
 #### Summary
 
@@ -9281,6 +9306,8 @@ All the three control components of a ```for``` loop are dispensable
 * ```update```
 - - -
 
+$$<
+
 ## Reference Types
 
 ### Step 01: Introducing Reference Types
@@ -9308,8 +9335,11 @@ When we create an new instance of `Planet', it is created on the Heap.
 	$18 ==> Planet@3f49dace
 ```
 
+$$<
+
 `new Planet()` creates an object on the Heap. In above example `Planet@3f49dace`, the object is stored on the Heap at address `3f49dace`.
 
+SS$$SS
 
 ```java
 	jshell> Planet jupiter = new Planet();
@@ -9348,6 +9378,8 @@ In Java, all classes are also called Reference Types. Except for primitive varia
  
  ` here dog is reference variable which will be stored in stack . Animal@27c20538 OR new Animal(12) is the actual object of Animal class for the corresponding reference variable  dog .Object will be stored in heap.`
 
+SS$$SS
+
 #### Summary
 
 In this step, we:
@@ -9358,7 +9390,7 @@ In this step, we:
 ### Step 02: References: Usage And Puzzles
 
 Let's spend some time playing with reference variables.
-
+$$<
 References that are not initialized by the programmer, are initialized by the Java compiler to ```null```. ```null``` is a special value that stands for an **empty location**. In other words, the ```Animal``` ```nothing``` refers to nothing!
 
 ```java
@@ -9374,6 +9406,9 @@ References that are not initialized by the programmer, are initialized by the Ja
 	nothing ==> null
 
 ```
+
+SS$$SS
+
 
 Assigning the reference ```cat``` to ```nothing``` does what one would expect: it assigns the address of the object created with ```new Animal(15)``` (stored in ```cat```), to the variable ```nothing```.
 
@@ -9409,10 +9444,14 @@ Let's change `nothing` to point to the same object referenced by `dog`.
 
 You can `nothing.id` prints the value of the object referenced by `dog` because they are pointing to the same object.
 
+$$<
+
 Here are couple of important things to note:
 
 * `nothing = dog` - Assignment between references does not copy the entire referenced object. It only copies the reference. After an assignment, both reference variables point to the same object. 
 * `nothing.id = 10` - References can be used to modify the objects they reference.
+
+SS$$SS
 
 #### Comparing Reference Variables
 
@@ -9446,6 +9485,8 @@ Comparing primitive variables compares their values.
 	$5 ==> true
 ```
 
+$$
+"==" compares the memory location of two objects, while "equals" compares the contents of two objects.
 
 Let's create a few reference variables.
 
@@ -9479,7 +9520,7 @@ The comparison ```dog == dog2``` evaluates to ```false``` since the references i
 
 ```
 
-
+SS$$SS
 
 #### Summary
 
@@ -9526,10 +9567,28 @@ String indexes, like those of arrays, start at ```0```. The ```charAt(int)``` me
 	jshell> str.charAt(3)
 	$4 ==> 't'
 ```
+
+$$<
+
 The ```substring()``` method returns a ```String``` reference, and has overloaded versions:
 * The ```substring(int, int)``` method returns the sequence of character symbols starting at the lower index, and ending just before the upper index. 
 * The ```substring(int)``` method returns the sequence of character symbols starting from the index to end of string.
 
+
+When a string is created in Java, it occupies memory in the heap. Also, we know that the String class is immutable. Therefore, whenever we create a string using the new keyword, new memory is allocated in the heap for corresponding string, which is irrespective of the content of the array. Consider the following code snippet.
+
+String str = new String("Welcome to JavaTpoint.");   
+String str1 = new String("Welcome to JavaTpoint");  
+System.out.println(str1 == str); // prints false  
+The println statement prints false because separate memory is allocated for each string literal. Thus, two new string objects are created in the memory i.e. str and str1. that holds different references.
+
+We know that creating an object is a costly operation in Java. Therefore, to save time, Java developers came up with the concept of String Constant Pool (SCP). The SCP is an area inside the heap memory. It contains the unique strings. In order to put the strings in the string pool, one needs to call the intern() method. Before creating an object in the string pool, the JVM checks whether the string is already present in the pool or not. If the string is present, its reference is returned.
+
+String str = new String("Welcome to JavaTpoint").intern(); // statement - 1  
+String str1 = new String("Welcome to JavaTpoint").intern(); // statement - 2  
+System.out.println(str1 == str); // prints true  
+
+SS$$SS
 ```java
 	jshell> String biggerString = "This is a lot of text";
 	biggerString ==> "This is a lot of text"
@@ -9581,6 +9640,8 @@ In this step, we:
 
 The ```String``` class is part of the built-in ```java.lang``` package. It provides several methods for common text processing. Let's have a peek at some of them, shall we? 
 
+$$<
+
 ##### Snippet-01: ```String``` Utilities 
 
 
@@ -9592,6 +9653,8 @@ Here are a few of the methods used in the examples below:
 * ```isEmpty()``` : Returns ```true``` if our string is empty, ```false``` otherwise.
 * ```equals()``` : Returns ```true``` if our string is identical to the argument, ```false``` otherwise.
 * ```equalsIgnoreCase()``` : Returns ```true``` if our string is identical to the argument, ignoring the case of its characters. Will return ```false``` otherwise.
+
+SS$$SS
 
 ```java
 
@@ -9644,6 +9707,8 @@ In this step, we:
 
 * Used our ```String``` programming skills on a small challenge.
 * Explored a set of simple, yet useful ```String``` utilities.
+
+$$<
 
 ### Step 05: ```String``` Immutability
 
@@ -9700,6 +9765,8 @@ Just like ```concat()```, other ```String``` methods such as ```toUpperCase()```
 
 ```
 
+SS$$SS
+
 #### Summary
 
 In this step, we:
@@ -9752,6 +9819,7 @@ In the example below, a different value is printed when parentheses are used aro
 	jshell> System.out.println("Value is " + (i + 20));
 	Value is 40
 ```
+$$<
 
 ```join()``` is used to join a set of `String` values.
 
@@ -9772,7 +9840,6 @@ In the example below, a different value is printed when parentheses are used aro
 
 ```
 
-
 #### Summary
 
 In this step, we:
@@ -9780,6 +9847,9 @@ In this step, we:
 * Learned that the ```+``` operator is overloaded for ```String``` concatenation
 * Observed how ```+``` interprets its operands, depending on the context
 * Noticed a few more ```String``` utility methods, such as ```join()``` and ```replace()```
+
+SS$$SS
+$$<
 
 ### Step 07: Storing mutable text
 operations done on a any string(Sub string) will not change its value,for that we need to save it to another string variable.But operation on string buffer will save it to string buffer variable itself.
@@ -9807,14 +9877,19 @@ How do you choose which one to use?
 * `StringBuffer` is thread safe. If you are writing a multi threaded program(more on this in a later section), use ```StringBuffer```.
 * Otherwise, use ```StringBuilder```, since it offers better performance in both execution-time and memory usage.
 
+SS$$SS
+
 #### Summary
 
 In this step, we:
 
 * Learned about ```StringBuffer``` and ```StringBuilder```
 
+$$<
+
 ### Step 08: Introducing Wrapper Classes
 wrapper classes wrap primitive data type and gives an object appearance.
+
 Integer i1=new Integer(55); OR
 Integer i2=Inter.valueOf("55") OR Integer i3=Integer.valueOf(55)  <= this means we can pass string value as input from appn and then convert to Integer before operation.
 
@@ -9843,6 +9918,10 @@ In this step, we:
 
 * Were introduced to the wrapper classes available for the primitive types
 * Learned about the advantages of having them around
+
+SS$$SS
+
+$$<
 
 ### Step 09: Creating Wrapper Objects
 
@@ -9946,6 +10025,10 @@ In this step, we:
 
 * Understood the mechanism of auto-boxing, which uses the assignment operator route
 * Understood how auto-boxing internally makes use of ```valueOf()``` method
+
+
+SS$$SS
+$$<
 
 ### Step 11: The Java ```Date``` API
 
@@ -10085,6 +10168,8 @@ These methods are also available with ```LocalTime``` and ```LocalDateTime``` cl
 
 ### ****For mutable classes (String , LocalDate ,Integer etc) -All modification method calls will return new objects. **** 
 
+SS$$SS
+
 ## Arrays and ArrayList
 
 We will use the following exercise to understand heavily used data structures of Java - Arrays and 
@@ -10186,6 +10271,7 @@ Above construct is called Enhanced ```for``` loop.
 ```mark``` is the loop control variable. Its type needs to match the type of an array elements, which is ```int```.
 
 Above ```for``` loop can be used irrespective of the number of elements in `marks` array.
+$$<
 
 ### Step 02:  Storing And Accessing Array Values
 
@@ -10259,6 +10345,9 @@ Snippet below shows more examples.
 	$7 ==> 0
 	
 ```
+
+SS$$SS
+
 #### Classroom Exercise CE-AA-01
 
 1. Write a program that creates an array ```marks``` to store 	```8``` ```int``` values, and code to iterate through ```marks``` using a ```for``` loop, printing out its values.
@@ -10287,7 +10376,7 @@ Hint: Use the ```marks.length``` property
 	jshell>
 
 ```
-
+$$<
 ### Step 04: Array Initialization, Data Types And Exceptions
 
 Below snippet shows how arrays with different types are initialized.
@@ -10360,6 +10449,9 @@ The built-in method ```Arrays.toString``` can be used to print out elements of a
 	jshell>
 
 ```
+
+SS$$SS
+SS<
 
 ### Step 05: Array Utilities
 - - - 
@@ -10444,6 +10536,8 @@ Using an enhanced ```for``` loop is easy and intutive.
 	jshell>
 
 ```
+
+SS$$SS
 
 ### Class_Name[] obj= new Class_Name[Array_Length];
 
@@ -10553,6 +10647,9 @@ We can implement the aggregate ```list-of-marks``` as an array.
 	}
 
 ```
+
+$$<
+
 ### Step 08:  Variable Arguments - The Basics
 
 What if you want to create a method which can accept variable number of arguments?
@@ -10618,6 +10715,9 @@ We created a `sum` method with a variable argument. Let's look at how to use it.
 ```
 
 In this step, we took our first look at variable arguments. Variable arguments allow us to pass variable number of arguments to a method.We don't have to provide overloaded methods so less code. It is used for simplifying a method that requires a variable number of arguments.
+
+SS$$SS
+
 
 ### Step 09: Variable Argument Methods For ```Student``` 
 
@@ -10707,7 +10807,7 @@ Let's add a few methods to the `Student` class to accept variable arguments.
 	}
 
 ```
-
+$$<
 #### Quick Tip
 
 The variable arguments list must always be at the end of the parameter list passed to a method. The following method definition **will not** be accepted by the Java compiler:
@@ -10720,9 +10820,11 @@ The variable arguments list must always be at the end of the parameter list pass
 
 ```
 
+SS$$SS
+
 - - - 
 ### Step 10: Arrays - Some Puzzles And Exercises 
-
+$$<
 Let's look at a few puzzles and exercises with Arrays.
 
 When creating arrays of objects, the array ends up holding references to the created objects.
@@ -10764,6 +10866,7 @@ Here's how you can initialize a `String` array.
 	jshell>
 	
 ```
+SS$$SS
 
 #### Classroom Exercise CE-AA-03 
 
@@ -10827,7 +10930,7 @@ We've implemented most of the features except for ```addMark()``` and ```removeM
 	student.removeMarkAtIndex(5);
 
 ```
-
+$$<
 We would want to add and remove from an array. Can we do this?
 
 The size of an array is fixed at its compile-time definition. Which means that once we define an array such as:
@@ -10846,6 +10949,16 @@ One of the options is
 If elements need to be removed from an array:
 * Create a fresh array with correspondingly lesser element slots
 * Copy the existing array elements, excluding the ones to be removed, to the beginning of this new array
+
+  public static void arraycopy(Object source_arr, int sourcePos,
+                            Object dest_arr, int destPos, int len)
+Parameters : 
+source_arr : array to be copied from
+sourcePos : starting position in source array from where to copy
+dest_arr : array to be copied in
+destPos : starting position in destination array, where to copy in
+len : total no. of components to be copied.
+
 
 ```java
 jshell> int[] marks = {12, 34, 45};
@@ -10867,7 +10980,12 @@ newMarks ==> int[4] { 12, 34, 45, 100 }
 
 ```
 
+how to remove element from an array -The basic approach includes finding the element at the specified index and then removing that element. The rest of the elements are copied into a new array. This would lead to an array of size one less than the original array. 
+
+
 As you can see, this can be very inefficient. How do we solve it?
+SS$$SS
+$$<
 
 ### Step 12: Introducing ```ArrayList```
 
@@ -10971,6 +11089,9 @@ Rest of operations are similar to a normal `ArrayList`.
 	jshell>
 
 ```
+
+SS$$SS
+
 
 ### Step 13: Refactoring ```Student``` To Use ```ArrayList```
 
