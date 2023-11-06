@@ -10983,7 +10983,12 @@ newMarks ==> int[4] { 12, 34, 45, 100 }
 how to remove element from an array -The basic approach includes finding the element at the specified index and then removing that element. The rest of the elements are copied into a new array. This would lead to an array of size one less than the original array. 
 
 
-As you can see, this can be very inefficient. How do we solve it?
+As you can see, this can be very inefficient. How do we solve it?  
+
+Advantages of Array over list  
+1-Arrays are memory efficient as they can store multiple values in the same location.  
+2- Arrays provide fast and efficient access to elements as compared to other data structures such as linked lists, trees etc. 
+
 SS$$SS
 $$<
 
@@ -11319,8 +11324,14 @@ The attributes of an object determine what it is made up of. At different points
 
 At any given time, values of these attributes defines the object's **state**. 
 
+$$<
+
 ***object has data and actions . Data has many state and action/behaviour(function) is behaviour. so we can say object has state and behaviour .
 Member variable represent data/state***
+
+For eg: A person travelling to Dubai,here person and dubai are data and travelling() is action.
+
+SS$$SS
 
 In The ```MotorBike``` example, the attribute ```speed``` defines a ```MotorBike```'s state. The ```speed``` of a ```ducati``` defines its state.
 
@@ -11409,6 +11420,8 @@ The methods ```setSpeed```, ```increaseSpeed``` and ```decreaseSpeed``` have an 
 ```
 
 ### Step 02: Managing ```class``` state
+
+$$<
 
 At a basic level, when we design a class, we decide:
 * `state` - member variables
@@ -11602,6 +11615,8 @@ _Make : Fan-Tastic, Radius : 0.45600, Color : GREEN, Is On : false, Speed : 0_
 The best way to design a class is using an `Outside In` thought process:
 * Who all could possibly be using my ```class```?
 * What functionality would they absolutely require?
+
+SS$$SS
 
 ### Step 04: Programming Exercise PE-OOP-01
 
