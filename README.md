@@ -13022,6 +13022,8 @@ However, in Java, direct Multiple Inheritance is not allowed.
 
 `class Dog extends Animal, Pet {}` throws an error. You cannot extend two classes.
 
+$$<
+
 #### Inheritance Chains
 
 However you can create an inheritance chain.
@@ -13104,8 +13106,9 @@ However, the converse assignment is not allowed. *A sub-class reference variable
 ```
 
 
-
+$$SS
 The ```instanceof``` operator is to find the relationship between an object and a class. If the object is an instance of the class or its sub class, it returns true. 
+$$SS
 
 
 ```java
@@ -13144,13 +13147,25 @@ The ```instanceof``` operator returns ```false``` if the object is an instance o
 
 ```
 
+SS$$SS
+
+
 ### Step 14: Introducing Abstract Classes
 
+$$<
+
 > ***Note***
-> abstraction -hiding implementation details from enduser.
+> abstraction -hiding implementation details from end user.
 An ```abstract class``` can contain ```abstract``` methods.
 > In encapsulation,we hide data .Abstraction hide all complexities in general .User will be using method call without knowing inner working.
 > Its like riding bike,expecting engine to be working ,without knowing working of engine like a mechanic or a scientist.
+> Declaring a class abstract only means that you don't allow it to be instantiated on its own.
+> Declaring a method abstract means that subclasses have to provide an implementation for that method.
+> Abstract Method is a method which have no body, If you declared at least one method into the class, the class must be declared as an abstract its mandatory BUT if you declared the abstract class its not mandatory to declared the abstract method inside the class.
+> You cannot create objects of abstract class, which means that it cannot be instantiated.
+> can have abstract classes with final method.
+> 1) abstract class with abstract methods.these type of classes, we must inherit a class from this abstract class and must override the abstract methods in our class, ex: GenricServlet class
+> 2) abstract class without abstract methods.these type of classes, we must inherit a class from this abstract class, ex: HttpServlet class purpose of doing is although you if you don't implement your logic in child class you can get the parent logic
 
 An abstract method does not have a method definition.
 
@@ -13193,6 +13208,7 @@ An ```abstract class``` cannot be instantiated.
 
 However, it can be sub-classed, creating inheritance hierarchies below it.  A sub-class of an abstract class (often called a **concrete class**) must override its ```abstract``` methods. 
 
+SS$$SS
 
 ```java
 	jshell> class Dog extends AbstractAnimal {
@@ -13213,7 +13229,7 @@ However, it can be sub-classed, creating inheritance hierarchies below it.  A su
 	Bow Bow
 	
 ```
-
+$$<
 ### Step 15: Abstract Classes - Design Aspects
 
 Why do we need an abstract class?
@@ -13224,9 +13240,12 @@ Consider a feast being prepared at a home, and several dishes are on the menu fo
 * Cleanup (the Mess created!)
 
 **Using abstract class ,can provide algorithm,then another dev can implement it in extended class**
+
+SS$$SS
+
 These steps would be different for each dish but the order of steps remain the same.
 
-
+$$<
 ##### Snippet-01 : The Recipe Hierarchy 
 
 Let's use abstract class to build the recipe.
@@ -13325,6 +13344,9 @@ _Discard unused Spices_
 
 `CurryRecipe` defines what needs to be done in each step. When we invoke the `execute` method, the steps are executed in order.
 
+SS$$SS
+
+
 ##### Snippet-02 : MicrowaveCurryRecipe
 
 We can easily create more recipes.
@@ -13397,10 +13419,14 @@ _Discard unused Vegetables_
 
 `MicrowaveCurryRecipe` defines what needs to be done in each step. When we invoke the `execute` method, the steps are executed in order. 
 
+$$<
 #### Summary
 
 This pattern is called a `Template method` pattern. You define an abstract class with the order of steps defined. You leave the implementation of each of the steps to the sub classes.
 **Abstract class will have high level algorithm**
+
+SS$$SS
+$$<
 
 ### Step 16: Abstract Classes - Puzzles
 
@@ -13449,6 +13475,9 @@ An ```abstract class``` can have non-abstract methods.
 
 ```
 
+SS$$SS
+
+$$<
 
 ### Step 17: Introducing Interfaces
 - - - 
@@ -13555,6 +13584,9 @@ _Go forward_
 
 The main advantage of having an interface is that it can be used to enforce a contract for its implementors. 
 
+SS$$SS
+
+
 ##### Snippet-02 : Code Reuse With Interfaces
 
 Let's look at another example - `ChessGame`.
@@ -13625,6 +13657,8 @@ _Move Piece Right_
 
 In the same ```GamerRunner``` ```class```, if we now instantiate a ```ChessGame``` object instead of a ```MarioGame``` one, none of the other code needs to change. This is because both ```MarioGame``` and ```ChessGame``` implement the same ```interface```, ```GamingConsole```. 
 
+$$<
+
 #### Using Interface as type for reference variable
 
 ```GamingConsole``` is an interface.```MarioGame``` and ```ChessGame``` are it's implementations.
@@ -13662,6 +13696,8 @@ _Move Piece Right_
 #### Explained
 `GamingConsole game = new ChessGame();` - You can store an implementation of an interface into a reference variable of the type of the interface.
 
+SS$$SS
+
 How does this help?
 
 Let's look at the next example:
@@ -13696,12 +13732,15 @@ _Go forward_
 
 ##### Snippet-04 Explained
 
+$$<
+
 You can replace `GamingConsole game = new ChessGame()` with `GamingConsole game = new MarioGame()` and now the program runs the `MarioGame`. Isn't it awesome?
 **Interface contains common actions can be performed.Can have multiple implementation for same interface.Then we can easily switch between implementaion without much code modifications.Interface is like contract.Abstract has flexibility of deciding whether or not to implement method.For ex. interface 1 has method 1.Interface 2 has method 2.interface 2 extend interface1.To implement only any one of the method , then use abstract class which have the flexibility to choose to implement or not to implement methods from interfaces.However if any concreate class implementing this abstract class ,then either concrete class or abstract class should have implementation for interfaces**
 
 ### Step 18: Using Interfaces To Design APIs
 
 Consider a Software Development project, which involves programming a fairly large and complex application.  Project team (Team A) decided to out-source part of this project to an external team (Team B). Let's say this external team needs to implement a farily complex algorithm to achieve a specific task, and which needs to interface with the rest of the application. Work on both parts of the application needs to proceed simultaneously.
+
 
 Suppose the algorithm logic is implemented using a single method:
 
@@ -13755,6 +13794,9 @@ Team B can take time to implement the actual algorithm.
 	}
 
 ```
+
+SS$$SS
+$$<
 
 ### Step 19: Interfaces - Puzzles And Interesting Facts
 - - -  
@@ -13826,7 +13868,7 @@ If a class is declared as abstract, it can skip providing implementations for al
 	   ...> }
 	| created interface InterfaceThree
 ```
-
+$$$
 Starting from Java SE 8, an interface can provide a default implementation of the methods it provides.  It can be done by including the keyword ```default``` in the signature of that method, and providing a body to that method in its definition.
 
 
@@ -13849,6 +13891,8 @@ Starting from Java SE 8, an interface can provide a default implementation of th
 	default print
 ```
 
+$$$
+
 Implementations of ```interface``` can override the default method implementation.
 
 ```java
@@ -13870,6 +13914,19 @@ Implementations of ```interface``` can override the default method implementatio
 
 No method declared inside an ```interface``` can be qualified with the ```private``` access specifier. However, an ```abstract class``` can have ```private``` methods declared within.
 
+Since Java8 you can have static methods in an interface (with body). You need to call them using the name of the interface, just like static methods of a class.
+Similar to Default Method in Interface, the static method in an interface can be defined in the interface, but cannot be overridden in Implementation Classes. To use a static method, Interface name should be instantiated with it, as it is a part of the Interface only.
+Why do we need ```default``` method implementations--What happens if a new method is added to the interface? Compilation Error! All implementations classes  must me updated to implement doMore() in each case.No other code needs to immediately change, and specific implementation classes can override this default version, as and when needed.
+This is especially useful in building and extending frameworks. You are not breaking a user of your framework interface when you add new methods to the interface.
+ In Java 9 and later versions, an interface can have six different things:
+Constant variables
+Abstract methods
+Default methods
+Static methods
+Private methods
+Private Static methods
+These private methods will improve code re-usability inside interfaces and will provide choice to expose only our intended methods implementations to users.These methods are only accessible within that interface only and cannot be accessed or inherited from an interface to another
+SS$$SS
 
 #### Why do we need ```default``` method implementations.
 
@@ -13941,6 +13998,9 @@ This is especially useful in building and extending frameworks. You are not brea
 
 When would you want to use them in your application?
 
+
+$$<
+
 #### interface
 
 ```interface``` is a **Contract**.
@@ -13990,6 +14050,7 @@ Here are important syntactical differences:
 * No method declared inside an ```interface``` can be qualified with a ```private``` access specifier. However, an ```abstract class``` can have ```private``` methods.
 * An ```interface``` cannot have declared member variables. An ```abstract class``` can have member variable declarations.
 * A ```class``` or an ```abstract class``` can implement multiple ```interface```s. But, an ```interface``` can extend only one ```interface```, and a ```class``` or an ```abstract class``` can extend only one ```class``` or ```abstract class```.
+(Multiple implemetation possible but on 1 extension possible.
 
 ### Step 21: Programming Exercise PE-OOP-03
 
