@@ -12113,6 +12113,7 @@ In Java, it is permitted for a super-class reference variable to reference a sub
 the converse assignment is not allowed and throws compilation error.**
 
 SS$$SS
+$$<
 
 Let's look at two classes `Person` and `Student`.
 
@@ -12210,18 +12211,24 @@ Let's look at two classes `Person` and `Student`.
 	}
 
 ```
+SS$$SS
 
 In above code examples, you can see that there is a lot of 
 * The member fields of ```Person```, namely ```name```, ```email``` and ```phoneNumber```, are replicated in ```Student```.
 * The setter and getter methods pertaining to the above fields of ```Person``` get repliated in ```Student``` as well.
 
-
+$$<
 Every `Student` is a `Person`. What if we could extend `Person` class instead of duplicating everything?
+
+"One class" is an "another class" then "one class" can inherit "another class".
+ 
+SS$$SS
 
 #### Enter Inheritance
 
 ```Student``` **is a** ```Person```. Java supports one of the basic Object Oriented Programming Paradigms : **Inheritance**.  
 
+$$<
 ```Student``` can *inherit* from ```Person```, to model the fact that a ```Student``` *is a* ```Person```. 
 
 This is accomplished by using the Java keyword ```extends```, during class definition of ```Student```. 
@@ -12242,9 +12249,13 @@ Inheritance is a mechanism of code reuse. In this case, all the fields and metho
 
 In this Inheritance relationship, ```Person``` is called the **super-class** of ```Student```. Likewise, ```Student``` is the **sub-class** of ```Person```.
 
+SS$$SS
+
 Let's now look at how we go about changing the ```Student``` ```class``` definition.
 
 ##### Snippet-02 : Student inherits from Person - v1
+
+$$<
 
 **_Person.java_**
 
@@ -12330,6 +12341,8 @@ Let's now look at how we go about changing the ```Student``` ```class``` definit
 
 ```
 
+SS$$SS
+
 ### Step 09:  Introducing ```Object``` class
 
 In the Java language, every class, whether an in-built Java library class, or a user-defined class, implicitly inherits from the class ```Object```. 
@@ -12337,6 +12350,8 @@ In the Java language, every class, whether an in-built Java library class, or a 
 This ```Object``` class is available in the Java system package ```java.lang```. This class is at the root of the Java class hierarchy. All classes, including arrays, implement/inherit the methods of this ```class```. 
 
 Let's take a look at the ```Person``` and ```Student``` classes.
+
+$$<
 
 ##### Snippet-01 : The Object class
 
@@ -12443,6 +12458,10 @@ Methods of the ```Object``` ```class``` such as ```toString()```, ```hashCode()`
 
 The statement ```System.out.println(person);``` actually gets translated to ```System.out.println(person.toString())```, as the Java system implicitly makes the call ```person.toString()``` as it is inherited from ```class``` ```Object``` for use in the ```String``` context.
 
+Private variables cannot be directly inherited in Java. Child classes can access private variables of the parent class only through public or protected methods.
+
+SS$$SS
+
 ### Step 10: Inheritance And Method Overriding
 
 Sub-class inherit features from super-class
@@ -12450,6 +12469,8 @@ Sub-class inherit features from super-class
 * behavior components  : super-class method definitions
 
 These are of course, available for access (and modification), and invocation, respectively, within the sub-class. 
+
+$$<
 
 You can also override super class method implementations in a sub class - **method overriding**. 
 
@@ -12526,6 +12547,9 @@ _Person Ranga , Email : in28minutes@gmail.com, Phone Number : 9898989898_
 ##### Snippet-01 Explained
 
 By defining the method ```toString()``` within the ```Person``` sub-```class```, we are overriding the default version provided by the ```Object``` super-```class```.
+
+Method overriding -helps to change behaviour of a method
+SS$$SS
 
 ### Step 11: Classroom Exercise CE-OOP-01 
 
