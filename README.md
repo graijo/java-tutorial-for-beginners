@@ -11619,7 +11619,7 @@ The best way to design a class is using an `Outside In` thought process:
 SS$$SS
 
 ### Step 04: Programming Exercise PE-OOP-01
-
+$$<
 1. Write a simple ```Rectangle``` ```class``` , while covering the following constituents:
 * State
 	* length
@@ -11709,6 +11709,9 @@ _Rectangle - length : 12, width : 25, area : 300, perimeter : 74_
 
 _Rectangle - length : 20, width : 25, area : 500, perimeter : 90_
 
+$$
+
+
 #### Solution Explained
 
 * A ```Rectangle``` object created without a specified ```length``` and ```width``` makes no practical sense, therefore a default constructor is not provided.
@@ -11738,6 +11741,9 @@ Let's take a re-look at the state attributes of the ```Fan``` ```class```:
 ```
 
 All member variables of 'Fan' class are primitive variables. Can we make it complex and include other classes?
+
+$$
+
 
 ##### Snippet-01 : Object composition - State
 
@@ -11941,14 +11947,14 @@ Let's add methods to provide behavior.
 		private String name;
 		private Address homeAddress;
 		private Address workAddress;
-
+		$$$
 		//creation
 		//workAddress not mandatory for creation
 		public Customer(String name, String homeAddress) {
 			this.name = name;
 			this.homeAddress = homeAddress;
 		}
-
+		$$$
 		//behaviors
 		//certain components of homeAddress and workAddress can be modified, not the name
 		public void setHomeAddress(Address homeAddress) {
@@ -11983,6 +11989,10 @@ _Customer [Ashwin Tendulkar] lives at [Flat No. 51, Hiranandani Gardens, Mumbai 
 
 _Customer [Ashwin Tendulkar] lives at [Flat No. 51, Hiranandani Gardens, Mumbai - 400076], works at [Administrative Office, Western Block, Mumbai - 400076]_
 **Composition-Customer will have 2 instance of address class**
+
+SS$$SS
+
+$$<
 
 ### Step 07: Programming Exercise PE-OOP-02
 
@@ -12074,7 +12084,7 @@ Write a program that manages Books and their Reviews:
 		}
 
 		public String toString() {
-			return "Book-" + id + ",  " + title + ", " + author + ", " + reviews);
+			return "Book-" + id + ",  " + title + ", " + author + ", " + reviews); //Could be reviewList which makes sense with output
 		}
 	}
 
@@ -12084,19 +12094,25 @@ Write a program that manages Books and their Reviews:
 
 _Book-123, Object Oriented Programming With Java, Ranga, [(Review-10, Great Book", 4), (Review-101, Awesome, 5)]_
 
-**Good design is always starts from thinking outside in.Putting yourself in the shoes of somebody going to use ur class is the best way to think about designing of class.If a data/member variable is always manadatory during object creation,then it should be on creation(constructor)**
+SS$$SS
+
+$$<
+
+**Good design is always starts from thinking outside in.Putting yourself in the shoes of somebody going to use ur class is the best way to think about designing of class.If a data/member variable is always manadatory during object creation,then it should be on creation(constructor).Use setter method if only some of the instance variables are needed**
 
 ### Step 07: The Need For Inheritance
 
-**Uses of inheritance-avoid duplication of code -both person and student has same data (name,email and phonenumber) and its methods
-Any user defiend class extend Object class by default if not extended
-To call super class method or variable from subclass,use super keyword 
-By default Object class is extends any class
-can not extend 2 class as multiple inheritance(however can have a chain of inheritance) but a class can implement multiple interfaces
+**Uses of inheritance-avoid duplication of code -both person and student has same data (name,email and phonenumber) and its methods.
+Any user defiend class extend Object class by default if not extended.
+To call super class method or variable from subclass,use super keyword .
+By default Object class is extends any class.
+can not extend 2 class as multiple inheritance(however can have a chain of inheritance) but a class can implement multiple interfaces.
 Constructors of super and then sub class will be called when sub class's objecte instantiated.
-Using sub class object,we can call super class methods
+Using sub class object,we can call super class methods.
 In Java, it is permitted for a super-class reference variable to reference a sub-class object instance.
-the converse assignment is not allowed and throws compilation error**
+the converse assignment is not allowed and throws compilation error.**
+
+SS$$SS
 
 Let's look at two classes `Person` and `Student`.
 
