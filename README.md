@@ -12690,7 +12690,7 @@ _Employee Title: Programmer Analyst, Employer: In28Minutes, Employee Grade: A, S
 ##### Snippet-01 Explained
 
 We have not printed the underlying ```Person``` object details in ```Employee.toString()``` method overriding. Let's look to do that next.
-
+$$<
 ### Step 12: Constructors, And Calling ```super()``` 
 
 The ```super``` keyword allows an sub-class to access the attributes present in the super-class. 
@@ -12751,6 +12751,8 @@ The ```super``` keyword allows an sub-class to access the attributes present in 
 	* ```super.getEmail()```
 	* ```super.getPhoneNumber()```
 
+SS$$SS
+$$
 
 #### Sub-Class Contructor 
 
@@ -12820,6 +12822,10 @@ When a sub-class object is created
 The Java compiler inserts the code ```super();``` (if it is not explicitly added by the programmer) as the first statement in the body of the sub-class default constructor, here ```Employer()```. 
 * The statement ```super();``` is the invocation of the super-class default constructor. 
 * Hence, the body of the super-class constructor is always invoked before the body of the sub-class constructor.
+
+if super class constructor is parameterless,then  super()
+otherwise include the arguments  , like super(argname1)
+SS$$SS
 
 ##### Snippet-3 : ```Person``` - Non-Default Constructor
 
@@ -12984,6 +12990,8 @@ Let's add a two argument construtor to the `Student` class.
 **_Console Output_**
 
 _Student : Ranga, College : IIT Bombay_
+
+$$<
 
 ### Step 13: Multiple Inheritance, Reference Variables And ```instanceof```
 
