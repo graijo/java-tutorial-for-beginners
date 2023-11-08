@@ -14051,6 +14051,15 @@ Here are important syntactical differences:
 * An ```interface``` cannot have declared member variables. An ```abstract class``` can have member variable declarations.
 * A ```class``` or an ```abstract class``` can implement multiple ```interface```s. But, an ```interface``` can extend only one ```interface```, and a ```class``` or an ```abstract class``` can extend only one ```class``` or ```abstract class```.
 (Multiple implemetation possible but on 1 extension possible.
+List interface is implemented by the classes of ArrayList, LinkedList, Vector, and Stack. List is an interface, and the instances of List can be created by implementing various classes.List cannot be instantiated.ArrayList can be instantiated.
+
+ArrayList is better for storing and accessing data.
+ArrayList internally uses a dynamic array to store the elements.
+LinkedList is better for manipulating data.
+LinkedList internally uses a doubly linked list to store the elements.
+When the rate of addition or removal rate is more than the read scenarios, then go for the LinkedList. On the other hand, when the frequency of the read scenarios is more than the addition or removal rate, then ArrayList takes precedence over LinkedList.
+Memory overhead in the LinkedList is more as compared to the ArrayList. It is because, in a LinkedList, we have two extra links (next and previous) as it is required to store the address of the previous and the next nodes, and these links consume extra space. Such links are not present in an ArrayList.
+SS$$SS
 
 ### Step 21: Programming Exercise PE-OOP-03
 
