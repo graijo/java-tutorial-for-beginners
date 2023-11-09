@@ -14087,8 +14087,16 @@ TODO
 $$<
 
 String,BigDecimal,WrapperClasses are immutable.
+list are mutable.
+
   Collections.sort(collectionObject);  
   ListIterator Interface is used to traverse the element in a backward and forward direction.
+
+  ArrayList is fast because it is non-synchronized.
+  Vector is slow because it is synchronized, i.e., in a multithreading environment, it holds the other threads in runnable or non-runnable state until current thread releases the lock of the object.
+  ArrayList is better for storing and accessing data.
+  LinkedList is better for manipulating data.
+  
   ```java
    ListIterator<String> iteratorObject=collectionObject.listIterator();    
         System.out.println("Traversing elements in forward direction");    
@@ -14110,7 +14118,7 @@ String,BigDecimal,WrapperClasses are immutable.
 ```
 SS$$SS
 
-
+$$<
 # Introducing Collections
 
 Arrays are not dynamic data structures. They can store only a fixed maximum number of elements.
@@ -14164,6 +14172,12 @@ We can see examples of creating a list and accessing element data below:
 	jshell>
 
 ```
+
+Immutable due to static method use to initialize.                   
+  List<String> words = List.of("Apple", "Bat", "Cat");
+mutable array.                        
+arrayList<String> wordsArrayList = new ArrayList<String>(List.of("Apple", "Bat", "Cat"));
+SS$$SS
 
 #### ```List``` Immutability
 
@@ -14219,7 +14233,8 @@ Let's look at a few examples:
 	jshell>
 
 ```
-
+ 
+$$<
 #### ```ArrayList``` vs ```LinkedList``` 
 
 ```ArrayList``` uses an array to store elements.
@@ -14239,6 +14254,16 @@ Optimization: the underlying data structure for a ```LinkedList``` is actually a
 ```Vector``` is thread-safe. In ```Vector```, all methods are ```synchronized```. 
 
 > Look at other thread safe `List` implementations as `Vector` has poor concurrency.
+
+Methods of vector are Synchronised.ie synchronised keyword used in method defintion.Only one thread will execute synchronized method's lines of code.
+Vector is ueful when Sharing data between multiple threads.Becoze of thread safety it has performance impact.So we need to use concurrent collections for thread safety.IF you dont need thread safety ,go for ArrayList.
+ArrayList and Vector uses array internally store elements.
+Linked list-has link from 1 element to another element -- elements are doubly linked means forward and backward
+
+set(int index, E element) method is to replace an elemnt in a position.
+remove(index) -to remove element from an index.
+listObject1.addAll(listObject2) -to combine arrays
+SS$$SS
 
 #### ```List``` Operations
 We will examine common ```List``` operations on an ```ArrayList```. Similar operations can also be done on a ```LinkedList``` or a ```Vector```.
@@ -19980,3 +20005,6 @@ Copy-On-Write collections should only be used for the specific usage scenarios, 
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 https://www.in28minutes.com/flashcard-java-09-referencetypes
 https://www.in28minutes.com/flashcard-java-10-arraysandarraylist
+
+### Teach Yourself Programming in Ten Years
+https://norvig.com/21-days.html
