@@ -14776,7 +14776,12 @@ _Asc : [1 Ranga, 2 Eve, 100 Adam]_
 
 _Desc : [100 Adam, 2 Eve, 1 Ranga]_
 
+
+$$<
+
 ### The ```Set``` ```interface```
+
+set does not allow positional add .
 
 Mathematically, a set is a collection of unique items. Similarly, the Java ```Set``` ```interface``` also specifies a contract for collections having unique elements.
 * If ```object1.equals(object2)``` returns ```true```, then only one of ```object1``` and ```object2``` have a place in a ```Set``` implementation.
