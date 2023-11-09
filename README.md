@@ -14059,6 +14059,13 @@ LinkedList is better for manipulating data.
 LinkedList internally uses a doubly linked list to store the elements.
 When the rate of addition or removal rate is more than the read scenarios, then go for the LinkedList. On the other hand, when the frequency of the read scenarios is more than the addition or removal rate, then ArrayList takes precedence over LinkedList.
 Memory overhead in the LinkedList is more as compared to the ArrayList. It is because, in a LinkedList, we have two extra links (next and previous) as it is required to store the address of the previous and the next nodes, and these links consume extra space. Such links are not present in an ArrayList.
+
+Polymorphism
+If one task is performed in different ways, it is known as polymorphism. 
+In Java, we use method overloading and method overriding to achieve polymorphism.
+for example, speak() method- a cat speaks meow, dog barks woof,human speak language etc.
+
+https://www.javatpoint.com/method-overriding-in-java
 SS$$SS
 
 ### Step 21: Programming Exercise PE-OOP-03
@@ -14076,6 +14083,33 @@ TODO
 ### Step 21: Introducing Polymorphism
 
 TODO
+
+$$<
+
+String,BigDecimal,WrapperClasses are immutable.
+  Collections.sort(collectionObject);  
+  ListIterator Interface is used to traverse the element in a backward and forward direction.
+  ```java
+   ListIterator<String> iteratorObject=collectionObject.listIterator();    
+        System.out.println("Traversing elements in forward direction");    
+        while(iteratorObject.hasNext()){    
+              
+        System.out.println("index:"+iteratorObject.nextIndex()+" value:"+iteratorObject.next());    
+        }    
+
+ //Creating list of Books  
+    List<Book> list=new ArrayList<Book>();  
+    //Creating Books  
+    Book b1=new Book(101,"Let us C","Yashwant Kanetkar","BPB",8);  
+    Book b2=new Book(102,"Data Communications and Networking","Forouzan","Mc Graw Hill",4);  
+    Book b3=new Book(103,"Operating System","Galvin","Wiley",6);  
+    //Adding Books to list  
+    list.add(b1);  
+    list.add(b2);  
+    list.add(b3);
+```
+SS$$SS
+
 
 # Introducing Collections
 
