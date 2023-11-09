@@ -14262,7 +14262,32 @@ Linked list-has link from 1 element to another element -- elements are doubly li
 
 set(int index, E element) method is to replace an elemnt in a position.
 remove(index) -to remove element from an index.
-listObject1.addAll(listObject2) -to combine arrays
+listObject1.addAll(listObject2) -to combine arrays.
+
+List<String> list1=new ArrayList<>(list2);  //to create list from an existing list.
+
+Collections.sort(listObject); //if listObject is of wrapper class , else if classObject ,then that class needs to implement Comparator interface before using sort() on the listObject of user defiend type.And implement compareTo method.
+
+class ClassName1 implements Comparable<Classname1>{ //give what type to compare
+
+@override
+
+public returnDataType compareTo(ClassName1 that){
+
+    return WrapperClassOfVariable.compare(this.variable,that.variable)    //change order of this and that to get reverse sort
+
+    }
+
+}
+
+
+
+Autoboxing:-    
+
+List list1=List.of("abc",'a',1,1.5);
+When variety of data are loaded into List , then all those data are autoboxed and creates wrapper for data types of corresponding values.
+
+
 SS$$SS
 
 #### ```List``` Operations
@@ -14494,6 +14519,8 @@ The ```ArrayList.sort()``` method requires the definition of a ```Comparator``` 
 
 ```
 
+$$<
+
 #### Sorting List
 
 ##### Snippet-9 : Sorting List
@@ -14621,6 +14648,7 @@ _[1 Ranga, 100 Adam, 2 Eve]_
 
 _[1 Ranga, 2 Eve, 100 Adam]_
 
+
 ##### Snippet-10 Explained
 
 `Integer.compare(x, y)`  returns the value 0 if x == y; a value less than 0 if x < y; and a value greater than 0 if x > y. 
@@ -14639,6 +14667,8 @@ If you change the order of parameters:
 Output changes to:
 
 _[100 Adam, 2 Eve, 1 Ranga]_
+
+SS$$SS
 
 #### The ```Comparator``` ```interface```
 
