@@ -13154,6 +13154,16 @@ SS$$SS
 
 $$<
 
+Final
+
+final can help improve security by preventing malicious code from modifying sensitive data or behavior.to ensur that certain aspects of a program cannot be modified or extended.
+
+Final variable->to declare constant variable .its value cannot be changed once it has been initialized. must be initialized either at the time of declaration or in the constructor of the class or Instance Initialization Block (Initialization blocks are executed whenever the class is initialized and before constructors are invoked.They are typically placed above the constructors within braces.It is not at all necessary to include them in your classes.).If you have more than one constructor in your class then it must be initialized in all of them, otherwise, a compile-time error will be thrown.
+
+final method --> to prevent method overriding.Methods that are part of a class’s public API and should not be modified by subclasses.
+
+final class-->to prevent class inheritance.classes that are intended to be used as is and should not be modified or extended.
+
 > ***Note***
 > abstraction -hiding implementation details from end user.
 An ```abstract class``` can contain ```abstract``` methods.
@@ -13737,6 +13747,8 @@ $$<
 You can replace `GamingConsole game = new ChessGame()` with `GamingConsole game = new MarioGame()` and now the program runs the `MarioGame`. Isn't it awesome?
 **Interface contains common actions can be performed.Can have multiple implementation for same interface.Then we can easily switch between implementaion without much code modifications.Interface is like contract.Abstract has flexibility of deciding whether or not to implement method.For ex. interface 1 has method 1.Interface 2 has method 2.interface 2 extend interface1.To implement only any one of the method , then use abstract class which have the flexibility to choose to implement or not to implement methods from interfaces.However if any concreate class implementing this abstract class ,then either concrete class or abstract class should have implementation for interfaces**
 
+Interfaces can have n number of implementation class and Parent class can have many child class .This way multiple implementation for a High level algorithm methods in parent/interface class can be acheived in multiple child class.
+
 ### Step 18: Using Interfaces To Design APIs
 
 Consider a Software Development project, which involves programming a fairly large and complex application.  Project team (Team A) decided to out-source part of this project to an external team (Team B). Let's say this external team needs to implement a farily complex algorithm to achieve a specific task, and which needs to interface with the rest of the application. Work on both parts of the application needs to proceed simultaneously.
@@ -13918,14 +13930,24 @@ Since Java8 you can have static methods in an interface (with body). You need to
 Similar to Default Method in Interface, the static method in an interface can be defined in the interface, but cannot be overridden in Implementation Classes. To use a static method, Interface name should be instantiated with it, as it is a part of the Interface only.
 Why do we need ```default``` method implementations--What happens if a new method is added to the interface? Compilation Error! All implementations classes  must me updated to implement doMore() in each case.No other code needs to immediately change, and specific implementation classes can override this default version, as and when needed.
 This is especially useful in building and extending frameworks. You are not breaking a user of your framework interface when you add new methods to the interface.
+
  In Java 9 and later versions, an interface can have six different things:
+ 
 Constant variables
+
 Abstract methods
+
 Default methods
+
 Static methods
+
 Private methods
+
 Private Static methods
-These private methods will improve code re-usability inside interfaces and will provide choice to expose only our intended methods implementations to users.These methods are only accessible within that interface only and cannot be accessed or inherited from an interface to another
+
+These private methods will improve code re-usability inside interfaces and will provide choice to expose only our intended methods implementations to users.These methods are only accessible within that interface only and cannot be accessed or inherited from an interface to another.
+
+static and private keywords use in abstract class and interface ??
 SS$$SS
 
 #### Why do we need ```default``` method implementations.
