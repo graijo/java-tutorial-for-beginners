@@ -13926,6 +13926,51 @@ Implementations of ```interface``` can override the default method implementatio
 
 No method declared inside an ```interface``` can be qualified with the ```private``` access specifier. However, an ```abstract class``` can have ```private``` methods declared within.
 
+Abstract method cannot be private in abstract class.--Cause compile time error
+
+If a method of a class is private, you cannot access it outside the current class, not even from the child classes of it.
+abstract method need to override it from subclass in order to use.
+Abstract class can have only public access modifier.
+
+Java 9 onwards,interface allow private,static and private static methods which can be used but with such methods also requires method body.
+
+```java
+interface MyInterface {
+   public abstract void demo();
+   public default void defaultMethod() {
+      privateMethod();
+      staticPrivateMethod();
+      System.out.println("This is a default method of the interface");
+   }
+
+   public static void staticMethod() {
+      staticPrivateMethod();
+      System.out.println("This is a static method of the interface");
+   }
+
+   private void privateMethod(){
+      System.out.println("This is a private method of the interface");
+   }
+
+   private static void staticPrivateMethod(){
+      System.out.println("This is a static private method of the interface");
+   }
+}
+
+public class InterfaceMethodsExample implements MyInterface {
+   public void demo() {
+      System.out.println("Implementation of the demo method");
+   }
+
+   public static void main(String[] args){
+      InterfaceMethodsExample obj = new InterfaceMethodsExample();
+      obj.defaultMethod();
+      obj.demo();
+      MyInterface.staticMethod();
+   }
+}
+```
+
 Since Java8 you can have static methods in an interface (with body). You need to call them using the name of the interface, just like static methods of a class.
 Similar to Default Method in Interface, the static method in an interface can be defined in the interface, but cannot be overridden in Implementation Classes. To use a static method, Interface name should be instantiated with it, as it is a part of the Interface only.
 Why do we need ```default``` method implementations--What happens if a new method is added to the interface? Compilation Error! All implementations classes  must me updated to implement doMore() in each case.No other code needs to immediately change, and specific implementation classes can override this default version, as and when needed.
