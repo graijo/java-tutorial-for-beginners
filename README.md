@@ -13923,16 +13923,23 @@ Implementations of ```interface``` can override the default method implementatio
 	jshell>
 
 ```
+Interface and abstract class's access modifier should only be public.
+Interface methods with access modifier - public and default are abstract methods.
+Interface methods with access modifier - private ,static ,private static and default are non abstract methods with body.
 
-No method declared inside an ```interface``` can be qualified with the ```private``` access specifier. However, an ```abstract class``` can have ```private``` methods declared within.
+Access modifier, static and final -combination for methods of abstract class or interface should be valid combination.
 
-Abstract method cannot be private in abstract class.--Cause compile time error
+Abstract method cannot be private in abstract class.Abstract method can not be static--Cause compile time error
 
 If a method of a class is private, you cannot access it outside the current class, not even from the child classes of it.
 abstract method need to override it from subclass in order to use.
-Abstract class can have only public access modifier.
 
-Java 9 onwards,interface allow private,static and private static methods which can be used but with such methods also requires method body.
+
+Aaccess modifier of abstract class should be public .
+
+Access modifier of Interface should be public.
+
+Java 9 onwards,interface allow private,static and private static methods which can be used but with such methods also requires method body.Interface's method can not have protected
 
 ```java
 interface MyInterface {
@@ -13973,7 +13980,7 @@ public class InterfaceMethodsExample implements MyInterface {
 
 Since Java8 you can have static methods in an interface (with body). You need to call them using the name of the interface, just like static methods of a class.
 Similar to Default Method in Interface, the static method in an interface can be defined in the interface, but cannot be overridden in Implementation Classes. To use a static method, Interface name should be instantiated with it, as it is a part of the Interface only.
-Why do we need ```default``` method implementations--What happens if a new method is added to the interface? Compilation Error! All implementations classes  must me updated to implement doMore() in each case.No other code needs to immediately change, and specific implementation classes can override this default version, as and when needed.
+Why do we need ```default``` method implementations--What happens if a new method is added to the interface? Compilation Error! All implementations classes  must be updated to implement doMore() in each case.No other code needs to immediately change, and specific implementation classes can override this default version, as and when needed.
 This is especially useful in building and extending frameworks. You are not breaking a user of your framework interface when you add new methods to the interface.
 
  In Java 9 and later versions, an interface can have six different things:
@@ -13992,7 +13999,7 @@ Private Static methods
 
 These private methods will improve code re-usability inside interfaces and will provide choice to expose only our intended methods implementations to users.These methods are only accessible within that interface only and cannot be accessed or inherited from an interface to another.
 
-static and private keywords use in abstract class and interface ??
+ 
 SS$$SS
 
 #### Why do we need ```default``` method implementations.
