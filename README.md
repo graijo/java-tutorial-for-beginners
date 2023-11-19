@@ -14081,9 +14081,9 @@ $$<
 
 An ```interface``` is primarily used when you have two software components that need to communicate with each other, and there is a need to establish a contract. 
 
-**Interface can have constant(int a=5) declartion not variable(int a)
+**Interface can have constant(int a=5) declartion , not variable(int a) . Abstract class allow variable (int a) and constants(int a=5 OR static int a=5 OR static final int a=5)   .   
 Interface can have a default method implemented.
-Interface good :-Your providing interface and 3rd party provides implementation
+Interface good :-Your providing interface and 3rd party provides implementation.
 Interfaces can have default methods to provide backward compatibility for old interfaces so that they can have new methods without affecting existing code in the implemented classes**
 Recall the following example: `ComplexAlgorithm` defines the interface which helps both the teams involved.
 
@@ -14121,10 +14121,18 @@ Recall the following example we had discussed:
 #### Syntactical Comparison
 
 Here are important syntactical differences:
-* No method declared inside an ```interface``` can be qualified with a ```private``` access specifier. However, an ```abstract class``` can have ```private``` methods.
-* An ```interface``` cannot have declared member variables. An ```abstract class``` can have member variable declarations.
+
+* An ```interface``` cannot have member variables. An ```abstract class``` can have member variable declarations.
 * A ```class``` or an ```abstract class``` can implement multiple ```interface```s. But, an ```interface``` can extend only one ```interface```, and a ```class``` or an ```abstract class``` can extend only one ```class``` or ```abstract class```.
-(Multiple implemetation possible but on 1 extension possible.
+(Multiple implemetation possible but only 1 extension possible.
+
+https://www.geeksforgeeks.org/collections-in-java-2/
+Interfaces---  Iterable->Collection->
+
+List(interface)->ArrayList, LinkedList, Vector, and Stack
+Set(interface)--> HashSet, LinkedHashSet & TreeSet
+
+DSA- interface has method signature (return type and arguments) 
 List interface is implemented by the classes of ArrayList, LinkedList, Vector, and Stack. List is an interface, and the instances of List can be created by implementing various classes.List cannot be instantiated.ArrayList can be instantiated.
 
 ArrayList is better for storing and accessing data.
@@ -14134,10 +14142,30 @@ LinkedList internally uses a doubly linked list to store the elements.
 When the rate of addition or removal rate is more than the read scenarios, then go for the LinkedList. On the other hand, when the frequency of the read scenarios is more than the addition or removal rate, then ArrayList takes precedence over LinkedList.
 Memory overhead in the LinkedList is more as compared to the ArrayList. It is because, in a LinkedList, we have two extra links (next and previous) as it is required to store the address of the previous and the next nodes, and these links consume extra space. Such links are not present in an ArrayList.
 
+Vector same as Array list but synchronised and thread safe but low performance(when thread safety not needed)
+
 Polymorphism
 If one task is performed in different ways, it is known as polymorphism. 
 In Java, we use method overloading and method overriding to achieve polymorphism.
 for example, speak() method- a cat speaks meow, dog barks woof,human speak language etc.
+
+
+stack--can only do operations on last inserted data  ; LIFO ; uses push and pop methods to insert and remove values on last item.
+
+
+Queue Interface--FIFO ; insert  − add an item to the rear of the queue.remove− remove an item from the front of the queue.
+ PriorityQueue & ArrayDeque are implemeted classes.
+ 
+ The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used. poll() method - to remove top element from queue.So Inserted to the end (keeping natural order ) and removed from the front.
+ 
+
+ ArrayDeque class allows to add or remove an element from both sides of the queue.  addFirst() method to insert the elements at the head.addLast() method to insert the elements at the tail.
+
+HashSet- The objects are inserted based on their hashcode.hance no insertion order.
+
+LinkedHashSet uses a doubly linked list to store the data and retains the ordering of the elements. 
+
+TreeSet --keeps natural ordering
 
 https://www.javatpoint.com/method-overriding-in-java
 SS$$SS
