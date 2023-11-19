@@ -14122,15 +14122,19 @@ Recall the following example we had discussed:
 
 Here are important syntactical differences:
 
-* An ```interface``` cannot have member variables. An ```abstract class``` can have member variable declarations.
+* An ```interface``` cannot have member variables only contansts available. An ```abstract class``` can have member variable declarations.
 * A ```class``` or an ```abstract class``` can implement multiple ```interface```s. But, an ```interface``` can extend only one ```interface```, and a ```class``` or an ```abstract class``` can extend only one ```class``` or ```abstract class```.
-(Multiple implemetation possible but only 1 extension possible.
+* (Multiple implemetation possible but only 1 extension possible.)
 
 https://www.geeksforgeeks.org/collections-in-java-2/
+
 Interfaces---  Iterable->Collection->
 
 List(interface)->ArrayList, LinkedList, Vector, and Stack
+
 Set(interface)--> HashSet, LinkedHashSet & TreeSet
+
+Map Interface--->HashMap,LinkedHashMap & TreeMap
 
 DSA- interface has method signature (return type and arguments) 
 List interface is implemented by the classes of ArrayList, LinkedList, Vector, and Stack. List is an interface, and the instances of List can be created by implementing various classes.List cannot be instantiated.ArrayList can be instantiated.
@@ -14146,7 +14150,7 @@ Vector same as Array list but synchronised and thread safe but low performance(w
 
 Polymorphism
 If one task is performed in different ways, it is known as polymorphism. 
-In Java, we use method overloading and method overriding to achieve polymorphism.
+In Java, we use method overloading(Static or Compile Time ) and method overriding (Dynamic or runtime) to achieve polymorphism.
 for example, speak() method- a cat speaks meow, dog barks woof,human speak language etc.
 
 
@@ -14166,6 +14170,22 @@ HashSet- The objects are inserted based on their hashcode.hance no insertion ord
 LinkedHashSet uses a doubly linked list to store the data and retains the ordering of the elements. 
 
 TreeSet --keeps natural ordering
+
+
+https://www.geeksforgeeks.org/map-interface-java-examples/
+
+HashMap--basic implementaion of map.Keys and value can’t be primitive datatype. Key in Hashmap is valid if it implements hashCode() and equals() method , it should also be immutable (immutable custom object ) so that hashcode and equality remains constant. Value in hashmap can be any wrapper class, custom objects, arrays, any reference type or even null .
+
+HashTable implementaion came before HashMap implementation.Hashtable class is synchronized, which can result in slower performance compared to other implementations of the Map interface.
+
+LinkedHashMap is similar to doubly linkedList. Previous-Key-value-Next . Next contains address of next node.
+
+
+When to Use Hashtable/HashMap ?- In dictionary , Words will be the keys and definition will be values.A map of error codes and their descriptions.
+A map of zip codes and cities.
+
+https://www.baeldung.com/java-hash-table
+
 
 https://www.javatpoint.com/method-overriding-in-java
 SS$$SS
