@@ -14163,11 +14163,11 @@ Queue Interface--FIFO ; insert  âˆ’ add an item to the rear of the queue.removeâ
  The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used. poll() method - to remove top element from queue.So Inserted to the end (keeping natural order ) and removed from the front.
  
 
- ArrayDeque class allows to add or remove an element from both sides of the queue.  addFirst() method to insert the elements at the head.addLast() method to insert the elements at the tail.
+ ArrayDeque class allows to add or remove an element from both sides of the queue.  addFirst() method to insert the elements at the head.  addLast() method to insert the elements at the tail.
 
 HashSet- The objects are inserted based on their hashcode.hance no insertion order.
 
-LinkedHashSet uses a doubly linked list to store the data and retains the ordering of the elements. 
+LinkedHashSet uses a doubly linked list to store the data and retains the insertion order of the elements. 
 
 TreeSet --keeps natural ordering
 
@@ -14209,7 +14209,7 @@ TODO
 $$<
 
 String,BigDecimal,WrapperClasses are immutable.
-list are mutable.
+list and array are mutable.
 
   Collections.sort(collectionObject);  
   ListIterator Interface is used to traverse the element in a backward and forward direction.
@@ -14295,10 +14295,13 @@ We can see examples of creating a list and accessing element data below:
 
 ```
 
-Immutable due to static method use to initialize.                   
+List which initialized with static method List.of become immutable . Adding new values to list make compiler error.Immutable due to static method use to initialize.                   
   List<String> words = List.of("Apple", "Bat", "Cat");
-mutable array.                        
+  
+To make mutable array.         
+
 arrayList<String> wordsArrayList = new ArrayList<String>(List.of("Apple", "Bat", "Cat"));
+
 SS$$SS
 
 #### ```List``` Immutability
@@ -14396,7 +14399,9 @@ class ClassName1 implements Comparable<Classname1>{ //give what type to compare
 
 public returnDataType compareTo(ClassName1 that){
 
-    return WrapperClassOfVariable.compare(this.variable,that.variable)    //change order of this and that to get reverse sort
+    return WrapperClassOfVariable.compare(this.variable,that.variable)    //returns a negative integer, zero, or a positive integer as this variable
+        //is less than, equal to, or greater than the specified object.
+    //change order of this and that to get reverse sort
 
     }
 
@@ -15286,6 +15291,10 @@ The ```interface``` definition looks something like:
 
 #### ```Map``` Collections : Concepts
 
+https://www.javatpoint.com/linkedhashmap-vs-hashmap-in-java
+
+https://www.javatpoint.com/difference-between-arraylist-and-linkedlist
+
 * ```HashMap```
 	* Unordered
 	* Unsorted
@@ -15538,6 +15547,9 @@ Let's quickly review what we've learnt:
 * When you use a "Hashed" Java collection (hash table based), such as ```HashMap``` or ```HashSet```, it will be unordered, unsorted and will iterate over its elements in no particular order.
 * When you encounter a "Linked" Java collection (linked list based), such as a ```LinkedHashSet``` or a ```LinkedHashMap```, it will maintain insertion order, but will be unsorted. 
 * When we make use of a "Tree"-based Java collection (stored in a tree data structure), such as ```TreeSet``` or ```TreeMap``` it always maintains natural sorted order. It would implement one of the navigable category of interfaces, such as ```NavigableSet``` or ```NavigableMap```.
+
+* https://www.in28minutes.com/flashcards-list-java
+  
 
 ## Introducing Generics
 
