@@ -15553,6 +15553,56 @@ Let's quickly review what we've learnt:
 
 ## Introducing Generics
 
+
+$$
+Generics :- Class not tied to 1 type.
+
+to define in class. Add <T> in class definition to use generic type.
+
+T stand for Type but any letter or word can be used in upper case like <E> or <TYPE> .
+
+During object creation, data type can be specified.
+
+This gives flexibility in defining which data type to use in class's method.Generic helps to make member variable and arguments of method as generic , later during object creation type can be choosen.
+
+Generic type can be given to member variable , return value of method and arguments of method.
+
+
+How to restrict generic
+
+Bype,Short,Integer,Long,Float & Double are sub classess of Number.
+
+In class definition , <T extends Number>  ,then object creation can be possible with subclasses of Number.
+
+How to use generic in Method?
+
+<X> X methodname(X value){
+
+return value;
+
+}
+
+String value=methodName(new String());
+
+List list=methodName(new ArrayList());
+
+
+
+how to restrict in method
+
+
+<X extends List> void methodName2(X list){
+
+list.addAll(list); //code to duplicate list
+
+}
+
+^^ Generic extends List and hence variable can use any methods in List class
+
+SS$$SS
+
+
+
 Recommended Videos
 - Generics - https://www.youtube.com/watch?v=v4o0wyFPwEs
 
