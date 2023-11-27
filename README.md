@@ -15988,6 +15988,27 @@ _[1, 1, 1.0. 1.0]_
 
 ## Introduction to Functional Programming
 
+
+$$
+
+1--
+
+listObject.stream()  ->this will stream each element of list
+
+listObject.stream().forEach( element -> System.out.println(element)  );
+
+streaming list element and doing an action inside foreach using each and every elements of list.
+
+Using Lambda expression ,for each element in the list ,do an operations(here print).
+
+^^ function as paramter to another function to loop around it.
+
+2--
+
+
+SS$$SS
+
+
 What's all the fuss around Functional Programming about?
 
 Let's find out.
