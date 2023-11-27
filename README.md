@@ -15989,6 +15989,7 @@ _[1, 1, 1.0. 1.0]_
 ## Introduction to Functional Programming
 
 
+
 $$
 
 1--
@@ -16004,6 +16005,16 @@ Using Lambda expression ,for each element in the list ,do an operations(here pri
 ^^ function as paramter to another function to loop around it.
 
 2--
+
+filtering
+
+list.stream()
+
+.filter(element->element.startsWith("C"))
+
+.forEach( element -> System.out.println(element)  );
+
+
 
 
 SS$$SS
